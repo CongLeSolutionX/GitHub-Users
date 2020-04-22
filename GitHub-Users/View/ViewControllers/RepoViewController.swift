@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RepoViewController.swift
 //  GitHub-Users
 //
 //  Created by Cong Le on 4/21/20.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RepoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "GitHub Searcher"
     }
 
-
 }
-

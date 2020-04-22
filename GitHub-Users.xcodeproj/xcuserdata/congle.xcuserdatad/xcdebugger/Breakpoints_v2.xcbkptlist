@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7F171854-AABB-4EC7-88BB-D9F5071E603F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHub-Users/ViewModel/UserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getUserDetailVM(for:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D - ae2368384902cb06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHub_Users.UserViewModel.getUserDetailVM(for: Swift.Int, completionHandler: (Swift.Optional&lt;GitHub_Users.UserDetailViewModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHub-Users"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/ViewModel/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D - ec4931c2cbd85bb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;GitHub_Users.UserInfo, GitHub_Users.ErrorDescription&gt;) -&gt; () in GitHub_Users.UserViewModel.getUserDetailVM(for: Swift.Int, completionHandler: (Swift.Optional&lt;GitHub_Users.UserDetailViewModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHub-Users"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/ViewModel/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "179">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
