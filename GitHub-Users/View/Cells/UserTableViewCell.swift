@@ -42,7 +42,7 @@ class UserTableViewCell: UITableViewCell {
                     self?.userImage.image = image
                 }
                 self.userNameLabel.text = self.userVM.username
-                self.repoNumberLabel.text = "Repos: \(self.userVM.repoCount)"
+                self.repoNumberLabel.text = "Repos: \(String(describing: self.userVM.repoCount))"
                 
             }
         }

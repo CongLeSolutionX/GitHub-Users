@@ -7,47 +7,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D"
+            uuid = "B340DFDF-C21F-449E-B780-7E50B84385B9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GitHub-Users/ViewModel/UserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "getUserDetailVM(for:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50BD55C2-3DE1-4B61-8D54-296461489B98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHub-Users/Extensions/URL+DownloadImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "downloadImage(completionHandler:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D - ae2368384902cb06"
+                  uuid = "50BD55C2-3DE1-4B61-8D54-296461489B98 - 2ee6dd4191ef1eee"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "GitHub_Users.UserViewModel.getUserDetailVM(for: Swift.Int, completionHandler: (Swift.Optional&lt;GitHub_Users.UserDetailViewModel&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "(extension in GitHub_Users):Foundation.URL.downloadImage(completionHandler: (Swift.Optional&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "GitHub-Users"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/ViewModel/UserViewModel.swift"
+                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/Extensions/URL+DownloadImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "178">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "101">
                </Location>
                <Location
-                  uuid = "72521F2D-40CB-4EB0-8146-09CE5CB3B73D - ec4931c2cbd85bb9"
+                  uuid = "50BD55C2-3DE1-4B61-8D54-296461489B98 - 85002ccb1a1d4443"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;GitHub_Users.UserInfo, GitHub_Users.ErrorDescription&gt;) -&gt; () in GitHub_Users.UserViewModel.getUserDetailVM(for: Swift.Int, completionHandler: (Swift.Optional&lt;GitHub_Users.UserDetailViewModel&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in (extension in GitHub_Users):Foundation.URL.downloadImage(completionHandler: (Swift.Optional&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "GitHub-Users"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/ViewModel/UserViewModel.swift"
+                  urlString = "file:///Users/congle/Desktop/DEVELOPMENTS/ENHANCE%20NOTES/T-Mobile/GitHub-Users/GitHub-Users/Extensions/URL+DownloadImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "179">
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "213">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -16,16 +16,21 @@ class UserViewController: UIViewController {
     
     var userViewModel = UserViewModel()
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
         displayUsers()
         
+        
+        
     }
     func setupSearchBar() {
         self.title = userViewModel.navTitle
+        userViewModel.updateClosure = { [weak self] in
+            DispatchQueue.main.async {
+                self?.userTableView.reloadData()
+            }
+        }
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search Users"
         searchController.obscuresBackgroundDuringPresentation = false
@@ -41,14 +46,9 @@ class UserViewController: UIViewController {
         userTableView.estimatedRowHeight = 50.0
         
         // get the user cells
-        userTableView.register(UserTableViewCell.self, forCellReuseIdentifier: Cells.userCellReuseIdendtifier)
+        userTableView.register(UserTableViewCell.self, forCellReuseIdentifier: CellID.userCellReuseIdendtifier)
         
-        userViewModel.updateClosure = { [weak self] in
-            DispatchQueue.main.async {
-                self?.userTableView.reloadData()
-            }
-            
-        }
+        
     }
     
 }
@@ -67,7 +67,7 @@ extension UserViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.userCellReuseIdendtifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellID.userCellReuseIdendtifier, for: indexPath)
             as? UserTableViewCell else {
                 fatalError("cannot dequeue cell")
         }
@@ -77,8 +77,6 @@ extension UserViewController: UITableViewDataSource {
         }
         return cell
     }
-    
-    
 }
 
 
@@ -86,12 +84,15 @@ extension UserViewController: UITableViewDataSource {
 extension UserViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: false, block: {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {
             [weak self] _ in
             guard let searchTerm = searchBar.text?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
             
             self?.userViewModel.getUser(searchTerm)
             
         })
+        
+        //                guard let searchTerm = searchBar.text?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
+        //                userViewModel.getUser(searchTerm)
     }
 }

@@ -26,9 +26,11 @@ depends-top-level:
 - "UserTableViewCell"
 - !private "fatalError"
 depends-member:
+- !private ["SK", "init"]
 - ["So15CALayerDelegateP", "CellStyle"]
 - !private ["So15CALayerDelegateP", "DispatchQueue"]
 - !private ["So15CALayerDelegateP", "NSLayoutConstraint"]
+- !private ["So15CALayerDelegateP", "String"]
 - !private ["So15CALayerDelegateP", "UIColor"]
 - ["So15CALayerDelegateP", "UIFont"]
 - ["So15CALayerDelegateP", "UIImageView"]
@@ -66,6 +68,7 @@ depends-member:
 - ["s7CVarArgP", "CellStyle"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "NSLayoutConstraint"]
+- !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", "UIFont"]
 - ["s7CVarArgP", "UIImageView"]
@@ -107,10 +110,13 @@ depends-member:
 - !private ["s7CVarArgP", "userNameLabel"]
 - !private ["s7CVarArgP", "userVM"]
 - !private ["s7CVarArgP", "widthAnchor"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
 - ["So17UIViewContentModeV", "scaleAspectFill"]
 - ["s28CustomDebugStringConvertibleP", "CellStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "NSLayoutConstraint"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", "UIFont"]
 - ["s28CustomDebugStringConvertibleP", "UIImageView"]
@@ -157,11 +163,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "username"]
 - !private ["s28CustomDebugStringConvertibleP", "widthAnchor"]
 - !private ["s17CustomReflectableP", "avatarURL"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "repoCount"]
 - !private ["s17CustomReflectableP", "username"]
 - ["s23CustomStringConvertibleP", "CellStyle"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "NSLayoutConstraint"]
+- !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", "UIFont"]
 - ["s23CustomStringConvertibleP", "UIImageView"]
@@ -208,6 +216,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "widthAnchor"]
 - !private ["Se", "avatarURL"]
 - !private ["Se", "downloadImage"]
+- !private ["Se", "init"]
 - !private ["Se", "repoCount"]
 - !private ["Se", "username"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
@@ -218,11 +227,13 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "avatarURL"]
 - !private ["SE", "downloadImage"]
+- !private ["SE", "init"]
 - !private ["SE", "repoCount"]
 - !private ["SE", "username"]
 - ["SQ", "CellStyle"]
 - !private ["SQ", "DispatchQueue"]
 - !private ["SQ", "NSLayoutConstraint"]
+- !private ["SQ", "String"]
 - !private ["SQ", "UIColor"]
 - ["SQ", "UIFont"]
 - ["SQ", "UIImageView"]
@@ -271,12 +282,17 @@ depends-member:
 - !private ["SQ", "userVM"]
 - !private ["SQ", "username"]
 - !private ["SQ", "widthAnchor"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "avatarURL"]
 - !private ["s23ExpressibleByNilLiteralP", "repoCount"]
 - !private ["s23ExpressibleByNilLiteralP", "username"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", "CellStyle"]
 - !private ["SH", "DispatchQueue"]
 - !private ["SH", "NSLayoutConstraint"]
+- !private ["SH", "String"]
 - !private ["SH", "UIColor"]
 - ["SH", "UIFont"]
 - ["SH", "UIImageView"]
@@ -325,9 +341,12 @@ depends-member:
 - !private ["SH", "userVM"]
 - !private ["SH", "username"]
 - !private ["SH", "widthAnchor"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "CellStyle"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - !private ["So8NSCodingP", "NSLayoutConstraint"]
+- !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", "UIFont"]
 - ["So8NSCodingP", "UIImageView"]
@@ -429,6 +448,7 @@ depends-member:
 - ["So8NSObjectP", "CellStyle"]
 - !private ["So8NSObjectP", "DispatchQueue"]
 - !private ["So8NSObjectP", "NSLayoutConstraint"]
+- !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UIColor"]
 - ["So8NSObjectP", "UIFont"]
 - ["So8NSObjectP", "UIImageView"]
@@ -478,16 +498,22 @@ depends-member:
 - !private ["Sq", "avatarURL"]
 - !private ["Sq", "repoCount"]
 - !private ["Sq", "username"]
+- !private ["Sm", "init"]
 - ["SY", "left"]
 - ["SY", "right"]
 - ["SY", "scaleAspectFill"]
 - !private ["10Foundation20ReferenceConvertibleP", "downloadImage"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "bottomAnchor"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "heightAnchor"]
@@ -501,6 +527,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "CellStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "DispatchQueue"]
 - !private ["So29UIAccessibilityIdentificationP", "NSLayoutConstraint"]
+- !private ["So29UIAccessibilityIdentificationP", "String"]
 - !private ["So29UIAccessibilityIdentificationP", "UIColor"]
 - ["So29UIAccessibilityIdentificationP", "UIFont"]
 - ["So29UIAccessibilityIdentificationP", "UIImageView"]
@@ -538,6 +565,7 @@ depends-member:
 - ["So12UIAppearanceP", "CellStyle"]
 - !private ["So12UIAppearanceP", "DispatchQueue"]
 - !private ["So12UIAppearanceP", "NSLayoutConstraint"]
+- !private ["So12UIAppearanceP", "String"]
 - !private ["So12UIAppearanceP", "UIColor"]
 - ["So12UIAppearanceP", "UIFont"]
 - ["So12UIAppearanceP", "UIImageView"]
@@ -575,6 +603,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CellStyle"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
 - !private ["So21UIAppearanceContainerP", "NSLayoutConstraint"]
+- !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", "UIFont"]
 - ["So21UIAppearanceContainerP", "UIImageView"]
@@ -625,6 +654,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "CellStyle"]
 - !private ["So17UICoordinateSpaceP", "DispatchQueue"]
 - !private ["So17UICoordinateSpaceP", "NSLayoutConstraint"]
+- !private ["So17UICoordinateSpaceP", "String"]
 - !private ["So17UICoordinateSpaceP", "UIColor"]
 - ["So17UICoordinateSpaceP", "UIFont"]
 - ["So17UICoordinateSpaceP", "UIImageView"]
@@ -662,6 +692,7 @@ depends-member:
 - ["So13UIDynamicItemP", "CellStyle"]
 - !private ["So13UIDynamicItemP", "DispatchQueue"]
 - !private ["So13UIDynamicItemP", "NSLayoutConstraint"]
+- !private ["So13UIDynamicItemP", "String"]
 - !private ["So13UIDynamicItemP", "UIColor"]
 - ["So13UIDynamicItemP", "UIFont"]
 - ["So13UIDynamicItemP", "UIImageView"]
@@ -699,6 +730,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CellStyle"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
 - !private ["So18UIFocusEnvironmentP", "NSLayoutConstraint"]
+- !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", "UIFont"]
 - ["So18UIFocusEnvironmentP", "UIImageView"]
@@ -736,6 +768,7 @@ depends-member:
 - ["So11UIFocusItemP", "CellStyle"]
 - !private ["So11UIFocusItemP", "DispatchQueue"]
 - !private ["So11UIFocusItemP", "NSLayoutConstraint"]
+- !private ["So11UIFocusItemP", "String"]
 - !private ["So11UIFocusItemP", "UIColor"]
 - ["So11UIFocusItemP", "UIFont"]
 - ["So11UIFocusItemP", "UIImageView"]
@@ -773,6 +806,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", "CellStyle"]
 - !private ["So20UIFocusItemContainerP", "DispatchQueue"]
 - !private ["So20UIFocusItemContainerP", "NSLayoutConstraint"]
+- !private ["So20UIFocusItemContainerP", "String"]
 - !private ["So20UIFocusItemContainerP", "UIColor"]
 - ["So20UIFocusItemContainerP", "UIFont"]
 - ["So20UIFocusItemContainerP", "UIImageView"]
@@ -812,6 +846,7 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", "CellStyle"]
 - !private ["So27UIGestureRecognizerDelegateP", "DispatchQueue"]
 - !private ["So27UIGestureRecognizerDelegateP", "NSLayoutConstraint"]
+- !private ["So27UIGestureRecognizerDelegateP", "String"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIColor"]
 - ["So27UIGestureRecognizerDelegateP", "UIFont"]
 - ["So27UIGestureRecognizerDelegateP", "UIImageView"]
@@ -853,6 +888,7 @@ depends-member:
 - ["So24UILargeContentViewerItemP", "CellStyle"]
 - !private ["So24UILargeContentViewerItemP", "DispatchQueue"]
 - !private ["So24UILargeContentViewerItemP", "NSLayoutConstraint"]
+- !private ["So24UILargeContentViewerItemP", "String"]
 - !private ["So24UILargeContentViewerItemP", "UIColor"]
 - ["So24UILargeContentViewerItemP", "UIFont"]
 - ["So24UILargeContentViewerItemP", "UIImageView"]
@@ -890,6 +926,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "CellStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSLayoutConstraint"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - ["So30UIPasteConfigurationSupportingP", "UIImageView"]
@@ -971,6 +1008,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CellStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
 - !private ["So30UIResponderStandardEditActionsP", "NSLayoutConstraint"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", "UIFont"]
 - ["So30UIResponderStandardEditActionsP", "UIImageView"]
@@ -1035,6 +1073,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CellStyle"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
 - !private ["So18UITraitEnvironmentP", "NSLayoutConstraint"]
+- !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", "UIFont"]
 - ["So18UITraitEnvironmentP", "UIImageView"]
@@ -1072,6 +1111,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "CellStyle"]
 - !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
 - !private ["So23UIUserActivityRestoringP", "NSLayoutConstraint"]
+- !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - ["So23UIUserActivityRestoringP", "UIFont"]
 - ["So23UIUserActivityRestoringP", "UIImageView"]
@@ -1181,11 +1221,17 @@ depends-member:
 - ["12GitHub_Users17UserTableViewCellC", "userNameLabel"]
 - ["12GitHub_Users17UserTableViewCellC", "userVM"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "downloadImage"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "downloadImage"]
+- !private ["s19_HasContiguousBytesP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CellStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSLayoutConstraint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
@@ -1230,6 +1276,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CellStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSLayoutConstraint"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIFont"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImageView"]
@@ -1273,11 +1320,13 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "widthAnchor"]
 - !private ["s21_ObjectiveCBridgeableP", "avatarURL"]
 - !private ["s21_ObjectiveCBridgeableP", "downloadImage"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "repoCount"]
 - !private ["s21_ObjectiveCBridgeableP", "username"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "CellStyle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "DispatchQueue"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "NSLayoutConstraint"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "String"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "UIFont"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "UIImageView"]
@@ -1313,8 +1362,11 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "userVM"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "widthAnchor"]
 depends-nominal:
+- !private "SK"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
 - "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -1325,8 +1377,14 @@ depends-nominal:
 - !private "So17OS_dispatch_queueC"
 - !private "SE"
 - "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -1342,11 +1400,16 @@ depends-nominal:
 - "So15NSTextAlignmentV"
 - !private "So9OS_objectC"
 - !private "Sq"
+- !private "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "7Combine9SchedulerP"
+- !private "ST"
+- !private "SS"
 - !private "s27StringInterpolationProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -1374,8 +1437,12 @@ depends-nominal:
 - !private "12GitHub_Users19UserDetailViewModelC"
 - "12GitHub_Users17UserTableViewCellC"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"

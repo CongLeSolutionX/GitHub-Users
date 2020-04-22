@@ -42,6 +42,7 @@ class UserViewModel: NavigationProtocol {
             case .success(let user):
                 let userObject = user
                 self?.users = userObject
+                print(userObject)
             case .failure(let error ):
                 print(error)
             }
@@ -54,6 +55,8 @@ class UserViewModel: NavigationProtocol {
             case .success(let userDetail):
                 let userDetailVM = UserDetailViewModel(userDetail)
                 completionHandler(userDetailVM)
+                print(self.users[index].url)
+                print("Getting user details.......\(userDetailVM.avatarURL)")
             case .failure(let error ):
                 print(error)
                 completionHandler(nil)

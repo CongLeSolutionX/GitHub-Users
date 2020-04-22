@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Cells {
+struct CellID {
     static let userCellReuseIdendtifier = "UserCell"
     static let repoCellReuseIdentifier = "RepoCell"
 }
