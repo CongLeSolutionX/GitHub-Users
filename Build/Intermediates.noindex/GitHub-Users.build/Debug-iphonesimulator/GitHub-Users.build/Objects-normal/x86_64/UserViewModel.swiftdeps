@@ -10,15 +10,15 @@ provides-member:
 - ["12GitHub_Users13UserViewModelC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
-- "FloatLiteralType"
+- "ErrorDescription"
 - "Int"
-- "IntegerLiteralType"
 - "NavigationProtocol"
 - "SearchUserDetailService"
 - "SearchUserService"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "User"
 - !private "UserDetailNetworkService"
 - "UserDetailViewModel"
@@ -54,8 +54,6 @@ depends-member:
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "url"]
-- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
-- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -68,8 +66,6 @@ depends-member:
 - ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["Se", "url"]
-- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
-- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "count"]
 - ["SE", "init"]
 - !private ["SE", "subscript"]
@@ -80,6 +76,9 @@ depends-member:
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
 - !private ["SQ", "url"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["12GitHub_Users16ErrorDescriptionV", "deinit"]
+- !private ["12GitHub_Users16ErrorDescriptionV", "localizedDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -103,7 +102,9 @@ depends-member:
 - !private ["12GitHub_Users18NavigationProtocolP", "UserDetailViewModel"]
 - !private ["12GitHub_Users18NavigationProtocolP", "UserNetworkService"]
 - ["12GitHub_Users18NavigationProtocolP", ""]
+- !private ["12GitHub_Users18NavigationProtocolP", "error"]
 - ["12GitHub_Users18NavigationProtocolP", "navTitle"]
+- !private ["12GitHub_Users18NavigationProtocolP", "onError"]
 - !private ["12GitHub_Users18NavigationProtocolP", "print"]
 - !private ["12GitHub_Users18NavigationProtocolP", "updateClosure"]
 - !private ["12GitHub_Users18NavigationProtocolP", "userDetailNetworkService"]
@@ -127,17 +128,13 @@ depends-member:
 - ["ST", "init"]
 - !private ["ST", "subscript"]
 - !private ["ST", "url"]
-- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
-- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "appendInterpolation"]
-- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12GitHub_Users4UserV", "url"]
 - !private ["12GitHub_Users24UserDetailNetworkServiceC", "deinit"]
 - !private ["12GitHub_Users24UserDetailNetworkServiceC", "init"]
-- !private ["12GitHub_Users19UserDetailViewModelC", "avatarURL"]
 - !private ["12GitHub_Users19UserDetailViewModelC", "init"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "deinit"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "init"]
+- ["12GitHub_Users13UserViewModelC", "ErrorDescription"]
 - ["12GitHub_Users13UserViewModelC", "Int"]
 - ["12GitHub_Users13UserViewModelC", "SearchUserDetailService"]
 - ["12GitHub_Users13UserViewModelC", "SearchUserService"]
@@ -148,16 +145,18 @@ depends-member:
 - !private ["12GitHub_Users13UserViewModelC", "UserNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "Void"]
 - ["12GitHub_Users13UserViewModelC", "deinit"]
+- ["12GitHub_Users13UserViewModelC", "error"]
 - ["12GitHub_Users13UserViewModelC", "getCountOfUsers"]
 - ["12GitHub_Users13UserViewModelC", "getUser"]
 - ["12GitHub_Users13UserViewModelC", "getUserDetailVM"]
 - ["12GitHub_Users13UserViewModelC", "init"]
 - ["12GitHub_Users13UserViewModelC", "navTitle"]
+- ["12GitHub_Users13UserViewModelC", "onError"]
 - !private ["12GitHub_Users13UserViewModelC", "print"]
 - ["12GitHub_Users13UserViewModelC", "updateClosure"]
 - ["12GitHub_Users13UserViewModelC", "userDetailNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "userNetworkService"]
-- ["12GitHub_Users13UserViewModelC", "users"]
+- !private ["12GitHub_Users13UserViewModelC", "users"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
@@ -187,9 +186,10 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - "10Foundation12DataProtocolP"
 - "Se"
-- !private "s26DefaultStringInterpolationV"
 - "SE"
 - "SQ"
+- !private "s5ErrorP"
+- !private "12GitHub_Users16ErrorDescriptionV"
 - "s25ExpressibleByArrayLiteralP"
 - "SH"
 - "SM"
@@ -201,8 +201,6 @@ depends-nominal:
 - !private "12GitHub_Users23SearchUserDetailServiceP"
 - !private "12GitHub_Users17SearchUserServiceP"
 - "ST"
-- !private "s27StringInterpolationProtocolP"
-- !private "s16TextOutputStreamP"
 - !private "12GitHub_Users4UserV"
 - !private "12GitHub_Users24UserDetailNetworkServiceC"
 - !private "12GitHub_Users19UserDetailViewModelC"
@@ -1425,4 +1423,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ef7466b94a5c8809ab06995c5710903a"
+interface-hash: "d72a1c4a1d7514ca461aef70a8ab6a53"

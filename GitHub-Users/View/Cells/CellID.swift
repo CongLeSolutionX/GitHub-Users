@@ -9,6 +9,6 @@
 import Foundation
 
 struct CellID {
-    static let userCellReuseIdendtifier = "UserCell"
+    static let userCellReuseIdentifier = "UserCell"
     static let repoCellReuseIdentifier = "RepoCell"
 }

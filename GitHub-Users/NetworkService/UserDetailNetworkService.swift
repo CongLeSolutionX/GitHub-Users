@@ -21,18 +21,19 @@ class UserDetailNetworkService: SearchUserDetailService {
                 completionHandler(.failure(.init(errorDescription: errorReceived.localizedDescription)))
                 return
             }
-            if let dataReceived = data {
-                do {
-                    let result = try JSONDecoder().decode(UserInfo.self, from: dataReceived)
-                    completionHandler(.success(result))
-                } catch {
-                    print(error)
-                    completionHandler(.failure(.init(errorDescription: error.localizedDescription)))
-                    return
-                }
+            guard let dataReceived = data else {
+                completionHandler(.failure(.init(errorDescription: "No data returned")))
+                return
             }
+            do {
+                let result = try JSONDecoder().decode(UserInfo.self, from: dataReceived)
+                completionHandler(.success(result))
+            } catch {
+                completionHandler(.failure(.init(errorDescription: error.localizedDescription)))
+                return
+            }
+            
         }.resume() 
     }
-    
     
 }

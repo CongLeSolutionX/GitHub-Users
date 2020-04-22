@@ -12,7 +12,7 @@ depends-top-level:
 depends-member:
 - ["12GitHub_Users6CellIDV", "init"]
 - ["12GitHub_Users6CellIDV", "repoCellReuseIdentifier"]
-- ["12GitHub_Users6CellIDV", "userCellReuseIdendtifier"]
+- ["12GitHub_Users6CellIDV", "userCellReuseIdentifier"]
 depends-nominal:
 - "12GitHub_Users6CellIDV"
 depends-dynamic-lookup:
@@ -1227,4 +1227,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f7bf09467b5496252cfb380cd8c59d52"
+interface-hash: "78316aec2ca8a7ff59cf079d51d14343"

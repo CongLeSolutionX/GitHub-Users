@@ -9,16 +9,16 @@
 import Foundation
 
 struct UserInfo: Codable{
-    let login: String?
+    let login: String
     let avatarURL: URL?
-    let reposURL: URL?
+    let reposURL: URL
     let location: String?
     let email: String?
     let bio: String?
-    let publicRepos: Int?
-    let followers: Int?
-    let following: Int?
-    let createdAt: String?
+    let publicRepos: Int
+    let followers: Int
+    let following: Int
+    let createdAt: String
     
     enum CodingKeys: String, CodingKey {
         case login = "login"

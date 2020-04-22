@@ -5,109 +5,350 @@ provides-nominal:
 - "12GitHub_Users19UserDetailViewModelC"
 provides-member:
 - ["12GitHub_Users19UserDetailViewModelC", ""]
+- ["12GitHub_Users19UserDetailViewModelC", "username"]
+- ["12GitHub_Users19UserDetailViewModelC", "avatarURL"]
+- ["12GitHub_Users19UserDetailViewModelC", "reposURL"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoCountString"]
+- ["12GitHub_Users19UserDetailViewModelC", "email"]
+- ["12GitHub_Users19UserDetailViewModelC", "bio"]
+- ["12GitHub_Users19UserDetailViewModelC", "location"]
+- ["12GitHub_Users19UserDetailViewModelC", "followers"]
+- ["12GitHub_Users19UserDetailViewModelC", "following"]
+- ["12GitHub_Users19UserDetailViewModelC", "date"]
+- ["12GitHub_Users19UserDetailViewModelC", "image"]
+- ["12GitHub_Users19UserDetailViewModelC", "getRepos"]
+- ["12GitHub_Users19UserDetailViewModelC", "search"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoCount"]
+- ["12GitHub_Users19UserDetailViewModelC", "makeRepoViewModel"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoUrl"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "??"
+- !private "!="
+- !private "+"
 - "AssignmentPrecedence"
+- "Data"
+- "ErrorDescription"
+- !private "FloatLiteralType"
 - "ISO8601DateFormatter"
+- "ImageService"
 - "Int"
+- !private "IntegerLiteralType"
+- "Repo"
+- !private "RepoNetworkService"
+- "RepoService"
+- "RepoViewModel"
 - "String"
 - !private "StringLiteralType"
 - "URL"
 - "UserDetailViewModel"
 - "UserInfo"
+- "Void"
+- !private "fatalError"
 depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "contains"]
+- !private ["SK", "count"]
+- !private ["SK", "filter"]
+- !private ["SK", "init"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "lowercased"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "formatOptions"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "lowercased"]
 - !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "lowercased"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "contains"]
+- !private ["SL", "init"]
+- !private ["SL", "isEmpty"]
+- !private ["SL", "lowercased"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "formatOptions"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
 - !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "lowercased"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "formatOptions"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
 - !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "avatarURL"]
 - !private ["Se", "bio"]
+- !private ["Se", "contains"]
+- !private ["Se", "count"]
 - !private ["Se", "createdAt"]
 - !private ["Se", "email"]
+- !private ["Se", "filter"]
 - !private ["Se", "followers"]
 - !private ["Se", "following"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
 - !private ["Se", "location"]
 - !private ["Se", "login"]
+- !private ["Se", "lowercased"]
+- !private ["Se", "name"]
 - !private ["Se", "publicRepos"]
 - !private ["Se", "reposURL"]
+- !private ["Se", "subscript"]
+- !private ["Se", "url"]
 - !private ["SE", "avatarURL"]
 - !private ["SE", "bio"]
+- !private ["SE", "contains"]
+- !private ["SE", "count"]
 - !private ["SE", "createdAt"]
 - !private ["SE", "email"]
+- !private ["SE", "filter"]
 - !private ["SE", "followers"]
 - !private ["SE", "following"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
 - !private ["SE", "location"]
 - !private ["SE", "login"]
+- !private ["SE", "lowercased"]
 - !private ["SE", "publicRepos"]
 - !private ["SE", "reposURL"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "count"]
 - !private ["SQ", "date"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "filter"]
 - !private ["SQ", "formatOptions"]
 - ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "lowercased"]
 - !private ["SQ", "string"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
 - !private ["SQ", "withDashSeparatorInDate"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "withDashSeparatorInDate"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s32ExpressibleByStringInterpolationP", "contains"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s32ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s26ExpressibleByStringLiteralP", "contains"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "contains"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
 - !private ["So11NSFormatterC", "date"]
 - !private ["So11NSFormatterC", "formatOptions"]
 - ["So11NSFormatterC", "init"]
 - !private ["So11NSFormatterC", "string"]
+- !private ["SH", "contains"]
+- !private ["SH", "count"]
 - !private ["SH", "date"]
+- !private ["SH", "failure"]
+- !private ["SH", "filter"]
 - !private ["SH", "formatOptions"]
 - ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "lowercased"]
 - !private ["SH", "string"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
 - !private ["So22NSISO8601DateFormatterC", "date"]
 - !private ["So22NSISO8601DateFormatterC", "formatOptions"]
 - ["So22NSISO8601DateFormatterC", "init"]
 - !private ["So22NSISO8601DateFormatterC", "string"]
+- !private ["12GitHub_Users12ImageServiceC", "download"]
+- ["12GitHub_Users12ImageServiceC", "init"]
+- !private ["s25LosslessStringConvertibleP", "contains"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
+- !private ["s10MirrorPathP", "contains"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "isEmpty"]
+- !private ["s10MirrorPathP", "lowercased"]
+- !private ["SM", "count"]
+- !private ["SM", "filter"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "date"]
 - !private ["So8NSCodingP", "formatOptions"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEmpty"]
+- !private ["So8NSCodingP", "lowercased"]
 - !private ["So8NSCodingP", "string"]
+- !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "date"]
 - !private ["So9NSCopyingP", "formatOptions"]
 - ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEmpty"]
+- !private ["So9NSCopyingP", "lowercased"]
 - !private ["So9NSCopyingP", "string"]
+- !private ["So21NSItemProviderReadingP", "contains"]
+- !private ["So21NSItemProviderReadingP", "isEmpty"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "contains"]
+- !private ["So21NSItemProviderWritingP", "isEmpty"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "contains"]
+- !private ["So16NSMutableCopyingP", "isEmpty"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "date"]
 - !private ["So8NSObjectC", "formatOptions"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEmpty"]
+- !private ["So8NSObjectC", "lowercased"]
 - !private ["So8NSObjectC", "string"]
+- !private ["So8NSObjectP", "contains"]
 - !private ["So8NSObjectP", "date"]
 - !private ["So8NSObjectP", "formatOptions"]
 - ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So8NSObjectP", "lowercased"]
 - !private ["So8NSObjectP", "string"]
+- !private ["So14NSSecureCodingP", "contains"]
 - !private ["So14NSSecureCodingP", "date"]
 - !private ["So14NSSecureCodingP", "formatOptions"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So14NSSecureCodingP", "lowercased"]
 - !private ["So14NSSecureCodingP", "string"]
+- !private ["So8NSStringC", "contains"]
+- !private ["So8NSStringC", "isEmpty"]
+- !private ["So8NSStringC", "lowercased"]
 - !private ["s9OptionSetP", "withDashSeparatorInDate"]
 - !private ["So26NSISO8601DateFormatOptionsV", "withDashSeparatorInDate"]
+- !private ["Sk", "count"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "count"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "lowercased"]
+- !private ["Sm", "subscript"]
 - !private ["SY", "withDashSeparatorInDate"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["12GitHub_Users4RepoV", "name"]
+- !private ["12GitHub_Users4RepoV", "url"]
+- !private ["12GitHub_Users18RepoNetworkServiceC", "deinit"]
+- !private ["12GitHub_Users18RepoNetworkServiceC", "init"]
+- !private ["12GitHub_Users11RepoServiceP", "getRepos"]
+- !private ["12GitHub_Users11RepoServiceP", "init"]
+- !private ["12GitHub_Users13RepoViewModelC", "init"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "filter"]
+- !private ["ST", "init"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "lowercased"]
+- !private ["ST", "subscript"]
 - !private ["s10SetAlgebraP", "withDashSeparatorInDate"]
+- !private ["SS", "contains"]
+- !private ["SS", "init"]
+- !private ["SS", "isEmpty"]
+- !private ["SS", "lowercased"]
+- !private ["Sy", "contains"]
+- !private ["Sy", "init"]
+- !private ["Sy", "isEmpty"]
+- !private ["Sy", "lowercased"]
+- !private ["s16TextOutputStreamP", "contains"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s16TextOutputStreamP", "lowercased"]
+- !private ["s20TextOutputStreamableP", "contains"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
+- !private ["10Foundation3URLV", "init"]
 - !private ["12GitHub_Users19UserDetailViewModelC", "$__lazy_storage_$_dateFormatter"]
+- ["12GitHub_Users19UserDetailViewModelC", "Data"]
+- ["12GitHub_Users19UserDetailViewModelC", "ErrorDescription"]
 - ["12GitHub_Users19UserDetailViewModelC", "ISO8601DateFormatter"]
+- ["12GitHub_Users19UserDetailViewModelC", "ImageService"]
 - ["12GitHub_Users19UserDetailViewModelC", "Int"]
+- ["12GitHub_Users19UserDetailViewModelC", "Repo"]
+- !private ["12GitHub_Users19UserDetailViewModelC", "RepoNetworkService"]
+- ["12GitHub_Users19UserDetailViewModelC", "RepoService"]
+- ["12GitHub_Users19UserDetailViewModelC", "RepoViewModel"]
 - ["12GitHub_Users19UserDetailViewModelC", "String"]
 - ["12GitHub_Users19UserDetailViewModelC", "URL"]
 - ["12GitHub_Users19UserDetailViewModelC", "UserInfo"]
+- ["12GitHub_Users19UserDetailViewModelC", "Void"]
+- !private ["12GitHub_Users19UserDetailViewModelC", "_repos"]
 - ["12GitHub_Users19UserDetailViewModelC", "avatarURL"]
 - ["12GitHub_Users19UserDetailViewModelC", "bio"]
 - ["12GitHub_Users19UserDetailViewModelC", "date"]
 - ["12GitHub_Users19UserDetailViewModelC", "dateFormatter"]
+- ["12GitHub_Users19UserDetailViewModelC", "deinit"]
 - ["12GitHub_Users19UserDetailViewModelC", "email"]
+- ["12GitHub_Users19UserDetailViewModelC", "error"]
+- !private ["12GitHub_Users19UserDetailViewModelC", "fatalError"]
 - ["12GitHub_Users19UserDetailViewModelC", "followers"]
 - ["12GitHub_Users19UserDetailViewModelC", "following"]
+- ["12GitHub_Users19UserDetailViewModelC", "getRepos"]
+- ["12GitHub_Users19UserDetailViewModelC", "image"]
+- ["12GitHub_Users19UserDetailViewModelC", "imageService"]
 - ["12GitHub_Users19UserDetailViewModelC", "init"]
 - ["12GitHub_Users19UserDetailViewModelC", "location"]
+- ["12GitHub_Users19UserDetailViewModelC", "makeRepoViewModel"]
+- ["12GitHub_Users19UserDetailViewModelC", "onError"]
 - ["12GitHub_Users19UserDetailViewModelC", "repoCount"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoCountString"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoService"]
+- ["12GitHub_Users19UserDetailViewModelC", "repoUrl"]
+- !private ["12GitHub_Users19UserDetailViewModelC", "repos"]
 - ["12GitHub_Users19UserDetailViewModelC", "reposURL"]
+- ["12GitHub_Users19UserDetailViewModelC", "search"]
+- ["12GitHub_Users19UserDetailViewModelC", "updateClosure"]
 - !private ["12GitHub_Users19UserDetailViewModelC", "userDetail"]
 - ["12GitHub_Users19UserDetailViewModelC", "username"]
 - !private ["12GitHub_Users8UserInfoV", "avatarURL"]
@@ -120,38 +361,131 @@ depends-member:
 - !private ["12GitHub_Users8UserInfoV", "login"]
 - !private ["12GitHub_Users8UserInfoV", "publicRepos"]
 - !private ["12GitHub_Users8UserInfoV", "reposURL"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "contains"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "lowercased"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "contains"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "contains"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "contains"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "lowercased"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "formatOptions"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contains"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "date"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "formatOptions"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lowercased"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "So11NSFormatterC"
 - "SH"
 - "So22NSISO8601DateFormatterC"
+- "12GitHub_Users12ImageServiceC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "So26NSISO8601DateFormatOptionsV"
+- !private "Sk"
+- !private "Sm"
 - !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "12GitHub_Users4RepoV"
+- !private "12GitHub_Users18RepoNetworkServiceC"
+- !private "12GitHub_Users11RepoServiceP"
+- !private "12GitHub_Users13RepoViewModelC"
+- !private "s6ResultO"
+- !private "ST"
 - !private "s10SetAlgebraP"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
 - "12GitHub_Users19UserDetailViewModelC"
 - !private "12GitHub_Users8UserInfoV"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1364,4 +1698,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d22265b40ca5d3f78d4bd12d8b4dcfcb"
+interface-hash: "95c506e672f4d6ea1d4aab50353befeb"

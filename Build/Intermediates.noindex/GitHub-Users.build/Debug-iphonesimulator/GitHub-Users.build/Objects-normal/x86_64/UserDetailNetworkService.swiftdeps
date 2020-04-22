@@ -16,13 +16,13 @@ depends-top-level:
 - !private "JSONDecoder"
 - "Result"
 - "SearchUserDetailService"
+- "StringLiteralType"
 - "URL"
 - !private "URLSession"
 - "UserDetailHandler"
 - "UserDetailNetworkService"
 - "UserInfo"
 - "Void"
-- !private "print"
 depends-member:
 - !private ["s7CVarArgP", "dataTask"]
 - !private ["s7CVarArgP", "resume"]
@@ -66,7 +66,6 @@ depends-member:
 - !private ["12GitHub_Users23SearchUserDetailServiceP", "UserInfo"]
 - ["12GitHub_Users23SearchUserDetailServiceP", ""]
 - ["12GitHub_Users23SearchUserDetailServiceP", "getUserDetail"]
-- !private ["12GitHub_Users23SearchUserDetailServiceP", "print"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
 - !private ["So12NSURLSessionC", "dataTask"]
@@ -81,7 +80,6 @@ depends-member:
 - ["12GitHub_Users24UserDetailNetworkServiceC", "deinit"]
 - ["12GitHub_Users24UserDetailNetworkServiceC", "getUserDetail"]
 - ["12GitHub_Users24UserDetailNetworkServiceC", "init"]
-- !private ["12GitHub_Users24UserDetailNetworkServiceC", "print"]
 - !private ["12GitHub_Users8UserInfoV", "deinit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]

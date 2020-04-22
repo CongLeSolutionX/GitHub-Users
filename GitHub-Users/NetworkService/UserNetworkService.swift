@@ -15,8 +15,9 @@ protocol SearchUserService {
 }
 
 class UserNetworkService: SearchUserService {
-    func getUsers(with querry: String, completionHandler: @escaping UserCompletionhandler) {
-        guard let urlLink = GitHuAPI(querry).userLink else {
+    func getUsers(with query: String, completionHandler: @escaping UserCompletionhandler) {
+        guard !query.isEmpty,
+            let urlLink = GitHuAPI(query).userLink else {
             completionHandler(.failure(.init(errorDescription: "This is not a good URL link")))
             return
         }
@@ -26,15 +27,16 @@ class UserNetworkService: SearchUserService {
                 completionHandler(.failure(.init(errorDescription: errorReceived.localizedDescription)))
                 return
             }
-            if let dataReceived = data {
-                do {
-                    let result = try JSONDecoder().decode(Users.self, from: dataReceived)
-                    completionHandler(.success(result.users))
-                } catch {
-                    print(error)
-                    completionHandler(.failure(.init(errorDescription: error.localizedDescription)))
-                    return
-                }
+            guard let dataReceived = data else {
+                completionHandler(.failure(.init(errorDescription: "No data returned")))
+                return
+            }
+            do {
+                let result = try JSONDecoder().decode(Users.self, from: dataReceived)
+                completionHandler(.success(result.users))
+            } catch {
+                completionHandler(.failure(.init(errorDescription: error.localizedDescription)))
+                return
             }
         }.resume()
     }

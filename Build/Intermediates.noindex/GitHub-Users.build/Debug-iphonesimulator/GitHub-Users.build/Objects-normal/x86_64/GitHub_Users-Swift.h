@@ -210,13 +210,62 @@ SWIFT_CLASS("_TtC12GitHub_Users11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UILabel;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12GitHub_Users17RepoTableViewCell")
+@interface RepoTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repoNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified forksLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified starsLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC12GitHub_Users18RepoViewController")
 @interface RepoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified repoInfoTableView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RepoViewController (SWIFT_EXTENSION(GitHub_Users)) <UITableViewDelegate>
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+@class UISearchBar;
+
+@interface RepoViewController (SWIFT_EXTENSION(GitHub_Users)) <UISearchBarDelegate>
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+@end
+
+
+@interface RepoViewController (SWIFT_EXTENSION(GitHub_Users)) <UITableViewDataSource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC12GitHub_Users21UserInfoTableViewCell")
+@interface UserInfoTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified userImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified joinDateLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followersLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followingLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified biographyLabel;
+@property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified repoSearchBar;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -228,7 +277,6 @@ SWIFT_CLASS("_TtC12GitHub_Users17UserTableViewCell")
 - (void)layoutSubviews;
 @end
 
-@class UITableView;
 
 SWIFT_CLASS("_TtC12GitHub_Users18UserViewController")
 @interface UserViewController : UIViewController
@@ -240,18 +288,19 @@ SWIFT_CLASS("_TtC12GitHub_Users18UserViewController")
 
 
 @interface UserViewController (SWIFT_EXTENSION(GitHub_Users)) <UITableViewDelegate>
-@end
-
-@class UISearchBar;
-
-@interface UserViewController (SWIFT_EXTENSION(GitHub_Users)) <UISearchBarDelegate>
-- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
 @interface UserViewController (SWIFT_EXTENSION(GitHub_Users)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface UserViewController (SWIFT_EXTENSION(GitHub_Users)) <UISearchBarDelegate>
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 @end
 
 #if __has_attribute(external_source_symbol)

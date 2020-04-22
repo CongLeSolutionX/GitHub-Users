@@ -17,51 +17,54 @@ class UserViewModel: NavigationProtocol {
     var navTitle: String {
         return "GitHub Searcher"
     }
-    // DIs
+    
     var userNetworkService: SearchUserService
     var userDetailNetworkService: SearchUserDetailService
     
     var updateClosure: (() -> Void)?
+    var onError: (() -> Void)?
     
-    var users = [User]() {
+    private var users = [User]() {
         didSet {
             self.updateClosure?()
         }
     }
-    // initilizer DI
+    private(set) var error: ErrorDescription? {
+        didSet {
+            if error != nil {
+                self.onError?()
+            }
+        }
+    }
+    
     init(userService: SearchUserService = UserNetworkService(),
          userDetailService: SearchUserDetailService = UserDetailNetworkService()  ) {
         self.userNetworkService = userService
         self.userDetailNetworkService = userDetailService
     }
     
-    
     func getUser(_ searchTerm: String) {
         userNetworkService.getUsers(with: searchTerm) { [weak self] (response) in
             switch response {
             case .success(let user):
-                let userObject = user
-                self?.users = userObject
-                print(userObject)
-            case .failure(let error ):
-                print(error)
+                self?.users = user
+            case .failure(let error):
+                self?.error = error
             }
         }
     }
     
-    func getUserDetailVM(for index: Int, completionHandler: @escaping( UserDetailViewModel?) -> Void ) {
-        userDetailNetworkService.getUserDetail(users[index].url ) { response in
+    func getUserDetailVM(for index: Int,
+                         completionHandler: @escaping(UserDetailViewModel?) -> Void ) {
+        userDetailNetworkService.getUserDetail(users[index].url) { response in
             switch response {
             case .success(let userDetail):
                 let userDetailVM = UserDetailViewModel(userDetail)
                 completionHandler(userDetailVM)
-                print(self.users[index].url)
-                print("Getting user details.......\(userDetailVM.avatarURL)")
-            case .failure(let error ):
-                print(error)
+            case .failure(let error):
+                print(error.localizedDescription)
                 completionHandler(nil)
             }
-            
         }
     }
     

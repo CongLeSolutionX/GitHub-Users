@@ -35,15 +35,21 @@ class UserTableViewCell: UITableViewCell {
         return label
     }()
     
-    var userVM: UserDetailViewModel! {
+    var userVM: UserDetailViewModel? {
         didSet {
             DispatchQueue.main.async {
-                self.userVM.avatarURL?.downloadImage { [weak self] image in
-                    self?.userImage.image = image
+                guard let userVM = self.userVM else { return }
+                userVM.image { [weak self] (image) in
+                    DispatchQueue.main.async {
+                        guard let image = image else {
+                            self?.userImage.image = nil
+                            return
+                        }
+                        self?.userImage.image = UIImage(data: image)
+                    }
                 }
-                self.userNameLabel.text = self.userVM.username
-                self.repoNumberLabel.text = "Repos: \(String(describing: self.userVM.repoCount))"
-                
+                self.userNameLabel.text = userVM.username
+                self.repoNumberLabel.text = userVM.repoCountString
             }
         }
     }
@@ -59,7 +65,7 @@ class UserTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        contentView.backgroundColor = UIColor.red
+        contentView.backgroundColor = UIColor.clear
     }
     
     func addUIElements() {
