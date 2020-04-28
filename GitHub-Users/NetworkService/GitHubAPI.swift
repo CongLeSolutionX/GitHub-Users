@@ -8,7 +8,10 @@
 
 import Foundation
 
-class GitHuAPI {
+//Check the rate limit:  curl https://api.github.com/rate_limit
+// search querry: https://api.github.com/search/users?q={userquerry}
+
+struct GitHubAPI {
     var userQuerry: String
     let base = "https://api.github.com/search/users?q="
     init(_ searchTerm: String) {
@@ -18,5 +21,4 @@ class GitHuAPI {
     var userLink: URL? {
         return URL(string: base + userQuerry)
     }
-    
 }

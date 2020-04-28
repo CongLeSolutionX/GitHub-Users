@@ -12,8 +12,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
+- !private "..."
+- !private "??"
+- !private "CastingPrecedence"
 - "ErrorDescription"
-- !private "GitHuAPI"
+- "FloatLiteralType"
+- !private "GitHubAPI"
+- !private "HTTPURLResponse"
+- "IntegerLiteralType"
 - !private "JSONDecoder"
 - "Result"
 - "SearchUserService"
@@ -25,33 +31,51 @@ depends-top-level:
 - "UserNetworkService"
 - !private "Users"
 - "Void"
+- !private "print"
 depends-member:
+- !private ["SK", "contains"]
 - !private ["SK", "isEmpty"]
 - !private ["s7CVarArgP", "dataTask"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "statusCode"]
+- !private ["s7CVarArgP", "value"]
+- !private ["SN", "contains"]
+- !private ["Sl", "contains"]
 - !private ["Sl", "isEmpty"]
 - !private ["SL", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["Se", "contains"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "users"]
+- !private ["SE", "contains"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "users"]
+- !private ["SQ", "contains"]
 - !private ["SQ", "dataTask"]
 - !private ["SQ", "failure"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "shared"]
+- !private ["SQ", "statusCode"]
 - !private ["SQ", "success"]
+- !private ["SQ", "value"]
 - !private ["s5ErrorP", "init"]
 - !private ["s5ErrorP", "localizedDescription"]
 - ["12GitHub_Users16ErrorDescriptionV", "deinit"]
@@ -60,21 +84,30 @@ depends-member:
 - !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
 - !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
-- !private ["12GitHub_Users0A5HuAPIC", "init"]
-- !private ["12GitHub_Users0A5HuAPIC", "userLink"]
+- !private ["12GitHub_Users0aB3APIV", "init"]
+- !private ["12GitHub_Users0aB3APIV", "userLink"]
+- !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["So17NSHTTPURLResponseC", "value"]
+- !private ["SH", "contains"]
 - !private ["SH", "dataTask"]
 - !private ["SH", "failure"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "resume"]
 - !private ["SH", "shared"]
+- !private ["SH", "statusCode"]
 - !private ["SH", "success"]
+- !private ["SH", "value"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s10MirrorPathP", "isEmpty"]
 - !private ["So8NSCodingP", "isEmpty"]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So8NSCodingP", "value"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So9NSCopyingP", "resume"]
+- !private ["So9NSCopyingP", "statusCode"]
+- !private ["So9NSCopyingP", "value"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
 - !private ["So21NSItemProviderWritingP", "isEmpty"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
@@ -82,17 +115,25 @@ depends-member:
 - !private ["So8NSObjectC", "isEmpty"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectP", "dataTask"]
 - !private ["So8NSObjectP", "isEmpty"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "statusCode"]
+- !private ["So8NSObjectP", "value"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["So14NSSecureCodingP", "value"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "contains"]
+- !private ["SX", "contains"]
 - !private ["Sm", "isEmpty"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
-- !private ["12GitHub_Users17SearchUserServiceP", "GitHuAPI"]
+- !private ["12GitHub_Users17SearchUserServiceP", "GitHubAPI"]
 - !private ["12GitHub_Users17SearchUserServiceP", "JSONDecoder"]
 - ["12GitHub_Users17SearchUserServiceP", "String"]
 - !private ["12GitHub_Users17SearchUserServiceP", "URLSession"]
@@ -100,6 +141,8 @@ depends-member:
 - !private ["12GitHub_Users17SearchUserServiceP", "Users"]
 - ["12GitHub_Users17SearchUserServiceP", ""]
 - ["12GitHub_Users17SearchUserServiceP", "getUsers"]
+- !private ["12GitHub_Users17SearchUserServiceP", "print"]
+- !private ["ST", "contains"]
 - !private ["ST", "isEmpty"]
 - !private ["SS", "isEmpty"]
 - !private ["Sy", "isEmpty"]
@@ -107,11 +150,14 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "isEmpty"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
+- !private ["So13NSURLResponseC", "statusCode"]
+- !private ["So13NSURLResponseC", "value"]
 - !private ["So12NSURLSessionC", "dataTask"]
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
-- !private ["12GitHub_Users18UserNetworkServiceC", "GitHuAPI"]
+- !private ["12GitHub_Users18UserNetworkServiceC", "GitHubAPI"]
+- !private ["12GitHub_Users18UserNetworkServiceC", "HTTPURLResponse"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "JSONDecoder"]
 - ["12GitHub_Users18UserNetworkServiceC", "String"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "URLSession"]
@@ -120,6 +166,7 @@ depends-member:
 - ["12GitHub_Users18UserNetworkServiceC", "deinit"]
 - ["12GitHub_Users18UserNetworkServiceC", "getUsers"]
 - ["12GitHub_Users18UserNetworkServiceC", "init"]
+- !private ["12GitHub_Users18UserNetworkServiceC", "print"]
 - !private ["12GitHub_Users0C0V", "deinit"]
 - !private ["12GitHub_Users0C0V", "users"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
@@ -132,14 +179,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusCode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 depends-nominal:
 - !private "SK"
 - !private "s7CVarArgP"
+- !private "SN"
 - !private "Sl"
 - !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
@@ -154,7 +206,8 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "12GitHub_Users0A5HuAPIC"
+- !private "12GitHub_Users0aB3APIV"
+- !private "So17NSHTTPURLResponseC"
 - !private "SH"
 - !private "10Foundation11JSONDecoderC"
 - !private "s25LosslessStringConvertibleP"
@@ -169,6 +222,8 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
 - !private "So19NSProgressReportingP"
+- !private "Sk"
+- !private "SX"
 - !private "Sm"
 - !private "s6ResultO"
 - "12GitHub_Users17SearchUserServiceP"
@@ -178,6 +233,7 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "7Combine15TopLevelDecoderP"
+- !private "So13NSURLResponseC"
 - !private "So12NSURLSessionC"
 - !private "So20NSURLSessionDataTaskC"
 - !private "So16NSURLSessionTaskC"

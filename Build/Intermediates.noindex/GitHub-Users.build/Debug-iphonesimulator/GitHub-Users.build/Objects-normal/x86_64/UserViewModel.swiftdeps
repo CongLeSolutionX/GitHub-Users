@@ -15,6 +15,10 @@ depends-top-level:
 - "ErrorDescription"
 - "Int"
 - "NavigationProtocol"
+- "RateLimit"
+- !private "RateLimitNetworkService"
+- "RateLimitService"
+- "RateLimitViewModel"
 - "SearchUserDetailService"
 - "SearchUserService"
 - "String"
@@ -96,6 +100,9 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["12GitHub_Users18NavigationProtocolP", "RateLimit"]
+- !private ["12GitHub_Users18NavigationProtocolP", "RateLimitNetworkService"]
+- !private ["12GitHub_Users18NavigationProtocolP", "RateLimitViewModel"]
 - ["12GitHub_Users18NavigationProtocolP", "String"]
 - ["12GitHub_Users18NavigationProtocolP", "User"]
 - !private ["12GitHub_Users18NavigationProtocolP", "UserDetailNetworkService"]
@@ -106,6 +113,7 @@ depends-member:
 - ["12GitHub_Users18NavigationProtocolP", "navTitle"]
 - !private ["12GitHub_Users18NavigationProtocolP", "onError"]
 - !private ["12GitHub_Users18NavigationProtocolP", "print"]
+- !private ["12GitHub_Users18NavigationProtocolP", "rateLimitNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "updateClosure"]
 - !private ["12GitHub_Users18NavigationProtocolP", "userDetailNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "userNetworkService"]
@@ -118,6 +126,13 @@ depends-member:
 - ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["Sm", "url"]
+- ["12GitHub_Users9RateLimitV", "deinit"]
+- ["12GitHub_Users9RateLimitV", "init"]
+- !private ["12GitHub_Users23RateLimitNetworkServiceC", "deinit"]
+- !private ["12GitHub_Users23RateLimitNetworkServiceC", "init"]
+- !private ["12GitHub_Users16RateLimitServiceP", "getRateLimit"]
+- !private ["12GitHub_Users16RateLimitServiceP", "init"]
+- !private ["12GitHub_Users18RateLimitViewModelC", "init"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
 - !private ["12GitHub_Users23SearchUserDetailServiceP", "getUserDetail"]
@@ -136,6 +151,10 @@ depends-member:
 - !private ["12GitHub_Users18UserNetworkServiceC", "init"]
 - ["12GitHub_Users13UserViewModelC", "ErrorDescription"]
 - ["12GitHub_Users13UserViewModelC", "Int"]
+- ["12GitHub_Users13UserViewModelC", "RateLimit"]
+- !private ["12GitHub_Users13UserViewModelC", "RateLimitNetworkService"]
+- ["12GitHub_Users13UserViewModelC", "RateLimitService"]
+- ["12GitHub_Users13UserViewModelC", "RateLimitViewModel"]
 - ["12GitHub_Users13UserViewModelC", "SearchUserDetailService"]
 - ["12GitHub_Users13UserViewModelC", "SearchUserService"]
 - ["12GitHub_Users13UserViewModelC", "String"]
@@ -147,12 +166,15 @@ depends-member:
 - ["12GitHub_Users13UserViewModelC", "deinit"]
 - ["12GitHub_Users13UserViewModelC", "error"]
 - ["12GitHub_Users13UserViewModelC", "getCountOfUsers"]
+- ["12GitHub_Users13UserViewModelC", "getRateLimit"]
 - ["12GitHub_Users13UserViewModelC", "getUser"]
 - ["12GitHub_Users13UserViewModelC", "getUserDetailVM"]
 - ["12GitHub_Users13UserViewModelC", "init"]
 - ["12GitHub_Users13UserViewModelC", "navTitle"]
 - ["12GitHub_Users13UserViewModelC", "onError"]
 - !private ["12GitHub_Users13UserViewModelC", "print"]
+- !private ["12GitHub_Users13UserViewModelC", "rateLimit"]
+- ["12GitHub_Users13UserViewModelC", "rateLimitNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "updateClosure"]
 - ["12GitHub_Users13UserViewModelC", "userDetailNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "userNetworkService"]
@@ -197,6 +219,10 @@ depends-nominal:
 - "12GitHub_Users18NavigationProtocolP"
 - "Sk"
 - "Sm"
+- "12GitHub_Users9RateLimitV"
+- !private "12GitHub_Users23RateLimitNetworkServiceC"
+- !private "12GitHub_Users16RateLimitServiceP"
+- !private "12GitHub_Users18RateLimitViewModelC"
 - !private "s6ResultO"
 - !private "12GitHub_Users23SearchUserDetailServiceP"
 - !private "12GitHub_Users17SearchUserServiceP"
@@ -1423,4 +1449,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d72a1c4a1d7514ca461aef70a8ab6a53"
+interface-hash: "c0b442c18760928be899e01dae2cb049"

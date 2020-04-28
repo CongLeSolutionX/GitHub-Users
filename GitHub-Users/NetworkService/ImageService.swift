@@ -91,7 +91,6 @@ class ImageService {
             completion(diskData)
             return
         }
-        
         completion(nil)
         if currentDownloads.contains(url) {
             return

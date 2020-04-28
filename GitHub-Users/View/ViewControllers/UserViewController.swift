@@ -13,16 +13,26 @@ class UserViewController: UIViewController {
     @IBOutlet weak var userTableView: UITableView!
     private let searchController = UISearchController(searchResultsController: nil)
     var timer: Timer? = nil
-    
     var userViewModel = UserViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkRateLimit()
         setupSearchBar()
         setupTableView()
         setupViewModel()
     }
-
+    
+    func checkRateLimit() {
+        // get the rate limit from GitHub API
+        userViewModel.getRateLimit { response  in
+            print("Limit request is: \(response?.limitRequest ?? 0)")
+            print("Reset time is: \(response?.resetTime ?? 0)")
+            print("Remaining request is: \(response?.remainingRequest ?? 0). If this remaining request hit 0, just wait to the next hour to make new request.")
+        }
+    }
+    
     func setupSearchBar() {
         self.title = userViewModel.navTitle
         searchController.searchBar.delegate = self
@@ -51,14 +61,14 @@ class UserViewController: UIViewController {
         userViewModel.onError = { [weak self] in
             DispatchQueue.main.async {
                 let errorMessage = self?.userViewModel.error?.errorDescription ?? "no error"
-                print("Show some error here: \(errorMessage)")
+                print("Search bar error: \(errorMessage)")
             }
         }
     }
     
 }
 
-// MARK: UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension UserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? UserTableViewCell else {
@@ -75,7 +85,7 @@ extension UserViewController: UITableViewDelegate {
 }
 
 
-// MARK: UITableViewDataSource
+// MARK: - UITableViewDataSource
 extension UserViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userViewModel.getCountOfUsers()
@@ -95,7 +105,7 @@ extension UserViewController: UITableViewDataSource {
 }
 
 
-// MARK: UISearchBarDelegate
+// MARK: - UISearchBarDelegate
 extension UserViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let searchTerm = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
@@ -109,9 +119,9 @@ extension UserViewController : UISearchBarDelegate {
     
     func search(_ searchTerm: String) {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false,
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false,
                                      block: { [weak self] _ in
-            self?.userViewModel.getUser(searchTerm)
+                                        self?.userViewModel.getUser(searchTerm)
         })
     }
 }

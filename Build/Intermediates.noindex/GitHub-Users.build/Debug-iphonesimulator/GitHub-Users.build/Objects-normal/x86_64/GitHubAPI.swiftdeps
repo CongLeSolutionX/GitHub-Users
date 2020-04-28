@@ -1,15 +1,15 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "GitHuAPI"
+- "GitHubAPI"
 provides-nominal:
-- "12GitHub_Users0A5HuAPIC"
+- "12GitHub_Users0aB3APIV"
 provides-member:
-- ["12GitHub_Users0A5HuAPIC", ""]
+- ["12GitHub_Users0aB3APIV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
-- "GitHuAPI"
+- "GitHubAPI"
 - "String"
 - "StringLiteralType"
 - "URL"
@@ -19,12 +19,12 @@ depends-member:
 - !private ["Se", "init"]
 - !private ["SE", "init"]
 - !private ["SQ", "init"]
-- ["12GitHub_Users0A5HuAPIC", "String"]
-- ["12GitHub_Users0A5HuAPIC", "URL"]
-- ["12GitHub_Users0A5HuAPIC", "base"]
-- ["12GitHub_Users0A5HuAPIC", "init"]
-- ["12GitHub_Users0A5HuAPIC", "userLink"]
-- ["12GitHub_Users0A5HuAPIC", "userQuerry"]
+- ["12GitHub_Users0aB3APIV", "String"]
+- ["12GitHub_Users0aB3APIV", "URL"]
+- ["12GitHub_Users0aB3APIV", "base"]
+- ["12GitHub_Users0aB3APIV", "init"]
+- ["12GitHub_Users0aB3APIV", "userLink"]
+- ["12GitHub_Users0aB3APIV", "userQuerry"]
 - !private ["SH", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation3URLV", "init"]
@@ -37,7 +37,7 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - !private "SQ"
-- "12GitHub_Users0A5HuAPIC"
+- "12GitHub_Users0aB3APIV"
 - !private "SH"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "10Foundation3URLV"
@@ -1256,4 +1256,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1eb27ebf106224dac820822fcdcefae0"
+interface-hash: "6de00d51fb9b957e2ffdcdd3a6a2d196"

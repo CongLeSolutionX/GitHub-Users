@@ -20,6 +20,7 @@ class UserViewModel: NavigationProtocol {
     
     var userNetworkService: SearchUserService
     var userDetailNetworkService: SearchUserDetailService
+    var rateLimitNetworkService: RateLimitService
     
     var updateClosure: (() -> Void)?
     var onError: (() -> Void)?
@@ -29,6 +30,9 @@ class UserViewModel: NavigationProtocol {
             self.updateClosure?()
         }
     }
+    
+    private var rateLimit = RateLimit()
+    
     private(set) var error: ErrorDescription? {
         didSet {
             if error != nil {
@@ -38,9 +42,23 @@ class UserViewModel: NavigationProtocol {
     }
     
     init(userService: SearchUserService = UserNetworkService(),
-         userDetailService: SearchUserDetailService = UserDetailNetworkService()  ) {
+         userDetailService: SearchUserDetailService = UserDetailNetworkService(),
+         rateLimitService: RateLimitService = RateLimitNetworkService()) {
         self.userNetworkService = userService
         self.userDetailNetworkService = userDetailService
+        self.rateLimitNetworkService = rateLimitService
+    }
+    
+    func getRateLimit(completionHandler: @escaping(RateLimitViewModel?) -> Void) {
+        rateLimitNetworkService.getRateLimit {  (response) in
+            switch response {
+            case .success(let rate):
+                let RateLimitVM = RateLimitViewModel(rateLimit: rate)
+                completionHandler(RateLimitVM)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func getUser(_ searchTerm: String) {
@@ -71,5 +89,4 @@ class UserViewModel: NavigationProtocol {
     func getCountOfUsers() -> Int {
         return users.count
     }
-    
 }

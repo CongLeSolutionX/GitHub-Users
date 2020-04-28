@@ -328,7 +328,6 @@ depends-member:
 - ["12GitHub_Users19UserDetailViewModelC", "bio"]
 - ["12GitHub_Users19UserDetailViewModelC", "date"]
 - ["12GitHub_Users19UserDetailViewModelC", "dateFormatter"]
-- ["12GitHub_Users19UserDetailViewModelC", "deinit"]
 - ["12GitHub_Users19UserDetailViewModelC", "email"]
 - ["12GitHub_Users19UserDetailViewModelC", "error"]
 - !private ["12GitHub_Users19UserDetailViewModelC", "fatalError"]
