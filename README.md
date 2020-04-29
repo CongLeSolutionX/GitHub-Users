@@ -22,25 +22,19 @@ This app is built based on the following criteria:
 		
 			- The view should contain their avatar image (a larger image) on the top left corner.
 
-			
 			- Right next the avatar image, display the following info: username, number of followers, number of following, biography, email, location, join date, and a list of public repositories.
 
-			
 			- Each item of the list view shall contain the name of the repository, the number of stars, and the number of forks.
-
 			
 			- The search bar will allow the user to search through the user’s repository. 
 
 		b. The second part (the bottom half of the scene): 
 		
 			- Display the list view of all repos of the selected user profile.
-
 			
 			- The list view shall not be paginated.
-
 			
 			- The search will automatically update upon each letter entered.
-
 			
 			- Tapping on a repository shall bring to a web browser and open the repository in the GitHub website.
 ## Bluprint:
@@ -53,3 +47,36 @@ This app is built based on the following criteria:
 	- reaching Rate limit from GitHub API documentation.
 	- fetch data with missing result.
 	- return fetched resull with https status codes for futher insight of error.
+
+## Screenshots: 
+### Normal workflow: 
+<img align="left" src="Screenshots/Screenshots-1.png" width="200" height="400" title="Screenshots-1">
+<img align="left" src="Screenshots/Screenshots-2.png" width="200" height="400" title="Screenshots-2">
+<img align="left" src="Screenshots/Screenshots-3.png" width="200" height="400" title="Screenshots-3">
+<img align="left" src="Screenshots/Screenshots-4.png" width="200" height="400" title="Screenshots-4">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+### Error cases: 
+<img align="left" src="Screenshots/Screenshots-5.png" width="200" height="400" title="Screenshots-5">
+
+
+
+
+
+
