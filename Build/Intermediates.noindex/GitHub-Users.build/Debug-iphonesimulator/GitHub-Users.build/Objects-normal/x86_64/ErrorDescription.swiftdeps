@@ -2,11 +2,11 @@
 provides-top-level:
 - "ErrorDescription"
 provides-nominal:
-- "12GitHub_Users16ErrorDescriptionV"
+- "12GitHub_Users16ErrorDescriptionO"
 provides-member:
-- ["12GitHub_Users16ErrorDescriptionV", ""]
-- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceededString"]
-- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceeded"]
+- ["12GitHub_Users16ErrorDescriptionO", ""]
+- ["12GitHub_Users16ErrorDescriptionO", "rateLimitExceededString"]
+- ["12GitHub_Users16ErrorDescriptionO", "rateLimitExceeded"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "??"
@@ -34,22 +34,22 @@ depends-member:
 - !private ["s5ErrorP", "errorDescription"]
 - ["s5ErrorP", "init"]
 - ["s5ErrorP", "rateLimitExceededString"]
-- ["12GitHub_Users16ErrorDescriptionV", "ErrorDescription"]
-- ["12GitHub_Users16ErrorDescriptionV", "String"]
-- ["12GitHub_Users16ErrorDescriptionV", "_code"]
-- ["12GitHub_Users16ErrorDescriptionV", "_domain"]
-- ["12GitHub_Users16ErrorDescriptionV", "_getEmbeddedNSError"]
-- ["12GitHub_Users16ErrorDescriptionV", "_userInfo"]
-- ["12GitHub_Users16ErrorDescriptionV", "debugDescription"]
-- ["12GitHub_Users16ErrorDescriptionV", "deinit"]
-- ["12GitHub_Users16ErrorDescriptionV", "errorDescription"]
-- ["12GitHub_Users16ErrorDescriptionV", "init"]
-- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceeded"]
-- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceededString"]
+- ["12GitHub_Users16ErrorDescriptionO", "ErrorDescription"]
+- ["12GitHub_Users16ErrorDescriptionO", "String"]
+- ["12GitHub_Users16ErrorDescriptionO", "_code"]
+- ["12GitHub_Users16ErrorDescriptionO", "_domain"]
+- ["12GitHub_Users16ErrorDescriptionO", "_getEmbeddedNSError"]
+- ["12GitHub_Users16ErrorDescriptionO", "_userInfo"]
+- ["12GitHub_Users16ErrorDescriptionO", "debugDescription"]
+- ["12GitHub_Users16ErrorDescriptionO", "deinit"]
+- !private ["12GitHub_Users16ErrorDescriptionO", "errorDescription"]
+- ["12GitHub_Users16ErrorDescriptionO", "init"]
+- ["12GitHub_Users16ErrorDescriptionO", "rateLimitExceeded"]
+- ["12GitHub_Users16ErrorDescriptionO", "rateLimitExceededString"]
 depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s5ErrorP"
-- "12GitHub_Users16ErrorDescriptionV"
+- "12GitHub_Users16ErrorDescriptionO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1262,4 +1262,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8b227b09a075fe7ca5f104905e6a5068"
+interface-hash: "990d751b6a988e3fb533c5c4db098aa8"

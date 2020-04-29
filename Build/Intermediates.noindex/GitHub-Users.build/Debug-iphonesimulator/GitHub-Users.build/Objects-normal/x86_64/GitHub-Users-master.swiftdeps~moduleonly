@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "2a666e8858407682f589be91d82891d5"
-build_time: [1588171261, 591456000]
+build_time: [1588173594, 530422000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/View/ViewControllers/UserViewController.swift": [1588169972, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/NetworkService/RateLimitService.swift": [1588092885, 0]
@@ -11,7 +11,7 @@ inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/AppDelegate.swift": [1587570879, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/View/Cells/UserInfoTableViewCell.swift": [1588092885, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/NetworkService/UserDetailNetworkService.swift": [1588169697, 0]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/Model/ErrorDescription.swift": [1588169657, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/Model/ErrorDescription.swift": !dirty [1588173594, 459032338]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/View/Cells/UserTableViewCell.swift": [1588092885, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/ViewModel/RateLimitViewModel.swift": [1588092885, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/T-Mobile/GitHub-Users/GitHub-Users/View/ViewControllers/RepoViewController.swift": [1588170522, 0]
