@@ -13,7 +13,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "..."
-- !private "??"
 - !private "CastingPrecedence"
 - "ErrorDescription"
 - "FloatLiteralType"
@@ -24,14 +23,13 @@ depends-top-level:
 - "Result"
 - "SearchUserService"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "URLSession"
 - "User"
 - "UserCompletionhandler"
 - "UserNetworkService"
 - !private "Users"
 - "Void"
-- !private "print"
 depends-member:
 - !private ["SK", "contains"]
 - !private ["SK", "isEmpty"]
@@ -40,30 +38,32 @@ depends-member:
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "statusCode"]
-- !private ["s7CVarArgP", "value"]
 - !private ["SN", "contains"]
 - !private ["Sl", "contains"]
 - !private ["Sl", "isEmpty"]
 - !private ["SL", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
-- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "statusCode"]
-- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["Se", "contains"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "users"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "contains"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "users"]
@@ -75,7 +75,6 @@ depends-member:
 - !private ["SQ", "shared"]
 - !private ["SQ", "statusCode"]
 - !private ["SQ", "success"]
-- !private ["SQ", "value"]
 - !private ["s5ErrorP", "init"]
 - !private ["s5ErrorP", "localizedDescription"]
 - ["12GitHub_Users16ErrorDescriptionV", "deinit"]
@@ -87,7 +86,6 @@ depends-member:
 - !private ["12GitHub_Users0aB3APIV", "init"]
 - !private ["12GitHub_Users0aB3APIV", "userLink"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
-- !private ["So17NSHTTPURLResponseC", "value"]
 - !private ["SH", "contains"]
 - !private ["SH", "dataTask"]
 - !private ["SH", "failure"]
@@ -96,18 +94,15 @@ depends-member:
 - !private ["SH", "shared"]
 - !private ["SH", "statusCode"]
 - !private ["SH", "success"]
-- !private ["SH", "value"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s10MirrorPathP", "isEmpty"]
 - !private ["So8NSCodingP", "isEmpty"]
 - !private ["So8NSCodingP", "statusCode"]
-- !private ["So8NSCodingP", "value"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So9NSCopyingP", "resume"]
 - !private ["So9NSCopyingP", "statusCode"]
-- !private ["So9NSCopyingP", "value"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
 - !private ["So21NSItemProviderWritingP", "isEmpty"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
@@ -116,16 +111,13 @@ depends-member:
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "statusCode"]
-- !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectP", "dataTask"]
 - !private ["So8NSObjectP", "isEmpty"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "statusCode"]
-- !private ["So8NSObjectP", "value"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
 - !private ["So14NSSecureCodingP", "statusCode"]
-- !private ["So14NSSecureCodingP", "value"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "contains"]
@@ -141,17 +133,19 @@ depends-member:
 - !private ["12GitHub_Users17SearchUserServiceP", "Users"]
 - ["12GitHub_Users17SearchUserServiceP", ""]
 - ["12GitHub_Users17SearchUserServiceP", "getUsers"]
-- !private ["12GitHub_Users17SearchUserServiceP", "print"]
 - !private ["ST", "contains"]
 - !private ["ST", "isEmpty"]
 - !private ["SS", "isEmpty"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "isEmpty"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "isEmpty"]
 - !private ["s20TextOutputStreamableP", "isEmpty"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
 - !private ["So13NSURLResponseC", "statusCode"]
-- !private ["So13NSURLResponseC", "value"]
 - !private ["So12NSURLSessionC", "dataTask"]
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
@@ -166,7 +160,6 @@ depends-member:
 - ["12GitHub_Users18UserNetworkServiceC", "deinit"]
 - ["12GitHub_Users18UserNetworkServiceC", "getUsers"]
 - ["12GitHub_Users18UserNetworkServiceC", "init"]
-- !private ["12GitHub_Users18UserNetworkServiceC", "print"]
 - !private ["12GitHub_Users0C0V", "deinit"]
 - !private ["12GitHub_Users0C0V", "users"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
@@ -180,13 +173,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusCode"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 depends-nominal:
 - !private "SK"
@@ -198,6 +189,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - !private "SQ"
 - !private "s5ErrorP"
@@ -229,6 +221,7 @@ depends-nominal:
 - "12GitHub_Users17SearchUserServiceP"
 - !private "ST"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"

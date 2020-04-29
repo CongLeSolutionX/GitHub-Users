@@ -8,12 +8,21 @@ provides-nominal:
 provides-member:
 - ["12GitHub_Users18NavigationProtocolP", ""]
 - ["12GitHub_Users13UserViewModelC", ""]
+- ["12GitHub_Users13UserViewModelC", "getUser"]
+- ["12GitHub_Users13UserViewModelC", "getRateLimit"]
+- ["12GitHub_Users13UserViewModelC", "determineError"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
+- !private "=="
+- !private "??"
 - "AssignmentPrecedence"
+- !private "DispatchGroup"
 - "ErrorDescription"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
+- !private "NSLock"
 - "NavigationProtocol"
 - "RateLimit"
 - !private "RateLimitNetworkService"
@@ -22,110 +31,244 @@ depends-top-level:
 - "SearchUserDetailService"
 - "SearchUserService"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
+- "UnicodeScalarType"
 - "User"
+- !private "UserCompletionhandler"
 - !private "UserDetailNetworkService"
 - "UserDetailViewModel"
+- "UserInfo"
 - !private "UserNetworkService"
 - "UserViewModel"
 - "Void"
-- !private "print"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "remaining"]
+- !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "first"]
 - ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
 - !private ["Sa", "subscript"]
-- !private ["s10ArraySliceV", "url"]
+- !private ["SK", "append"]
 - !private ["SK", "count"]
+- !private ["SK", "first"]
 - ["SK", "init"]
+- !private ["SK", "isEmpty"]
 - !private ["SK", "subscript"]
-- !private ["SK", "url"]
+- !private ["Sz", "remaining"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "enter"]
+- !private ["s7CVarArgP", "first"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "leave"]
+- !private ["s7CVarArgP", "lock"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "notify"]
+- !private ["s7CVarArgP", "remaining"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "unlock"]
+- !private ["Sl", "append"]
 - !private ["Sl", "count"]
+- !private ["Sl", "first"]
 - ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
 - !private ["Sl", "subscript"]
-- !private ["Sl", "url"]
+- !private ["SL", "remaining"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
 - ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
-- !private ["10Foundation15ContiguousBytesP", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "enter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "leave"]
+- !private ["s28CustomDebugStringConvertibleP", "lock"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "notify"]
+- !private ["s28CustomDebugStringConvertibleP", "rateLimitExceeded"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
-- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "unlock"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "first"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "remaining"]
 - !private ["s17CustomReflectableP", "subscript"]
-- !private ["s17CustomReflectableP", "url"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "enter"]
+- !private ["s23CustomStringConvertibleP", "first"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "leave"]
+- !private ["s23CustomStringConvertibleP", "lock"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "notify"]
+- !private ["s23CustomStringConvertibleP", "remaining"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
-- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["s23CustomStringConvertibleP", "unlock"]
+- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "first"]
 - ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "isEmpty"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
-- !private ["10Foundation12DataProtocolP", "url"]
+- !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "first"]
 - ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "remaining"]
 - !private ["Se", "subscript"]
 - !private ["Se", "url"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["So17OS_dispatch_groupC", "enter"]
+- !private ["So17OS_dispatch_groupC", "init"]
+- !private ["So17OS_dispatch_groupC", "leave"]
+- !private ["So17OS_dispatch_groupC", "notify"]
+- !private ["So18OS_dispatch_objectC", "enter"]
+- !private ["So18OS_dispatch_objectC", "init"]
+- !private ["So18OS_dispatch_objectC", "leave"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So18OS_dispatch_objectC", "notify"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "first"]
 - ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "remaining"]
 - !private ["SE", "subscript"]
 - !private ["SE", "url"]
+- !private ["SQ", "append"]
 - !private ["SQ", "count"]
+- !private ["SQ", "enter"]
 - !private ["SQ", "failure"]
+- !private ["SQ", "first"]
 - ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "leave"]
+- !private ["SQ", "lock"]
+- !private ["SQ", "main"]
+- !private ["SQ", "notify"]
+- !private ["SQ", "remaining"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
-- !private ["SQ", "url"]
-- !private ["s5ErrorP", "localizedDescription"]
-- !private ["12GitHub_Users16ErrorDescriptionV", "deinit"]
-- !private ["12GitHub_Users16ErrorDescriptionV", "localizedDescription"]
+- !private ["SQ", "unlock"]
+- !private ["s5ErrorP", "init"]
+- !private ["s5ErrorP", "rateLimitExceeded"]
+- !private ["12GitHub_Users16ErrorDescriptionV", "init"]
+- !private ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceeded"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s25ExpressibleByArrayLiteralP", "url"]
+- !private ["s27ExpressibleByIntegerLiteralP", "remaining"]
+- !private ["s17FixedWidthIntegerP", "remaining"]
+- !private ["SH", "append"]
 - !private ["SH", "count"]
+- !private ["SH", "enter"]
 - !private ["SH", "failure"]
+- !private ["SH", "first"]
 - ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "leave"]
+- !private ["SH", "lock"]
+- !private ["SH", "main"]
+- !private ["SH", "notify"]
+- !private ["SH", "remaining"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
-- !private ["SH", "url"]
+- !private ["SH", "unlock"]
+- !private ["Si", "remaining"]
+- !private ["s25LosslessStringConvertibleP", "remaining"]
+- !private ["s10MirrorPathP", "remaining"]
+- !private ["SM", "append"]
 - !private ["SM", "count"]
+- !private ["SM", "first"]
 - ["SM", "init"]
+- !private ["SM", "isEmpty"]
 - !private ["SM", "subscript"]
-- !private ["SM", "url"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
 - ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So6NSLockC", "init"]
+- !private ["So6NSLockC", "lock"]
+- !private ["So6NSLockC", "unlock"]
+- !private ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "lock"]
+- !private ["So9NSLockingP", "unlock"]
+- !private ["So8NSObjectC", "enter"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "leave"]
+- !private ["So8NSObjectC", "lock"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "notify"]
+- !private ["So8NSObjectC", "unlock"]
+- !private ["So8NSObjectP", "enter"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "leave"]
+- !private ["So8NSObjectP", "lock"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "notify"]
+- !private ["So8NSObjectP", "unlock"]
+- !private ["12GitHub_Users18NavigationProtocolP", "DispatchGroup"]
+- !private ["12GitHub_Users18NavigationProtocolP", "ErrorDescription"]
+- !private ["12GitHub_Users18NavigationProtocolP", "NSLock"]
 - ["12GitHub_Users18NavigationProtocolP", "RateLimit"]
 - !private ["12GitHub_Users18NavigationProtocolP", "RateLimitNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "RateLimitViewModel"]
 - ["12GitHub_Users18NavigationProtocolP", "String"]
-- ["12GitHub_Users18NavigationProtocolP", "User"]
 - !private ["12GitHub_Users18NavigationProtocolP", "UserDetailNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "UserDetailViewModel"]
+- ["12GitHub_Users18NavigationProtocolP", "UserInfo"]
 - !private ["12GitHub_Users18NavigationProtocolP", "UserNetworkService"]
 - ["12GitHub_Users18NavigationProtocolP", ""]
+- !private ["12GitHub_Users18NavigationProtocolP", "determineError"]
 - !private ["12GitHub_Users18NavigationProtocolP", "error"]
+- !private ["12GitHub_Users18NavigationProtocolP", "fetchUsers"]
+- !private ["12GitHub_Users18NavigationProtocolP", "getRateLimit"]
 - ["12GitHub_Users18NavigationProtocolP", "navTitle"]
 - !private ["12GitHub_Users18NavigationProtocolP", "onError"]
-- !private ["12GitHub_Users18NavigationProtocolP", "print"]
 - !private ["12GitHub_Users18NavigationProtocolP", "rateLimitNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "updateClosure"]
 - !private ["12GitHub_Users18NavigationProtocolP", "userDetailNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "userNetworkService"]
 - !private ["12GitHub_Users18NavigationProtocolP", "users"]
+- !private ["Sj", "remaining"]
+- !private ["So9OS_objectC", "enter"]
+- !private ["So9OS_objectC", "init"]
+- !private ["So9OS_objectC", "leave"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So9OS_objectC", "notify"]
+- !private ["Sk", "append"]
 - !private ["Sk", "count"]
+- !private ["Sk", "first"]
 - ["Sk", "init"]
+- !private ["Sk", "isEmpty"]
 - !private ["Sk", "subscript"]
-- !private ["Sk", "url"]
+- !private ["Sm", "append"]
 - !private ["Sm", "count"]
+- !private ["Sm", "first"]
 - ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
 - !private ["Sm", "subscript"]
-- !private ["Sm", "url"]
 - ["12GitHub_Users9RateLimitV", "deinit"]
 - ["12GitHub_Users9RateLimitV", "init"]
 - !private ["12GitHub_Users23RateLimitNetworkServiceC", "deinit"]
@@ -133,24 +276,40 @@ depends-member:
 - !private ["12GitHub_Users16RateLimitServiceP", "getRateLimit"]
 - !private ["12GitHub_Users16RateLimitServiceP", "init"]
 - !private ["12GitHub_Users18RateLimitViewModelC", "init"]
+- !private ["12GitHub_Users18RateLimitViewModelC", "limitRequest"]
+- !private ["12GitHub_Users18RateLimitViewModelC", "remainingRequest"]
+- !private ["12GitHub_Users18RateLimitViewModelC", "resetTime"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
+- !private ["s10SIMDScalarP", "remaining"]
+- !private ["7Combine9SchedulerP", "main"]
 - !private ["12GitHub_Users23SearchUserDetailServiceP", "getUserDetail"]
 - !private ["12GitHub_Users23SearchUserDetailServiceP", "init"]
 - !private ["12GitHub_Users17SearchUserServiceP", "getUsers"]
 - !private ["12GitHub_Users17SearchUserServiceP", "init"]
+- !private ["ST", "append"]
 - !private ["ST", "count"]
+- !private ["ST", "first"]
 - ["ST", "init"]
+- !private ["ST", "isEmpty"]
 - !private ["ST", "subscript"]
-- !private ["ST", "url"]
+- !private ["SZ", "remaining"]
+- !private ["s13SignedNumericP", "remaining"]
+- !private ["Sx", "remaining"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12GitHub_Users4UserV", "url"]
 - !private ["12GitHub_Users24UserDetailNetworkServiceC", "deinit"]
 - !private ["12GitHub_Users24UserDetailNetworkServiceC", "init"]
 - !private ["12GitHub_Users19UserDetailViewModelC", "init"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "deinit"]
 - !private ["12GitHub_Users18UserNetworkServiceC", "init"]
+- !private ["12GitHub_Users13UserViewModelC", "DispatchGroup"]
 - ["12GitHub_Users13UserViewModelC", "ErrorDescription"]
 - ["12GitHub_Users13UserViewModelC", "Int"]
+- !private ["12GitHub_Users13UserViewModelC", "NSLock"]
 - ["12GitHub_Users13UserViewModelC", "RateLimit"]
 - !private ["12GitHub_Users13UserViewModelC", "RateLimitNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "RateLimitService"]
@@ -159,12 +318,16 @@ depends-member:
 - ["12GitHub_Users13UserViewModelC", "SearchUserService"]
 - ["12GitHub_Users13UserViewModelC", "String"]
 - ["12GitHub_Users13UserViewModelC", "User"]
+- !private ["12GitHub_Users13UserViewModelC", "UserCompletionhandler"]
 - !private ["12GitHub_Users13UserViewModelC", "UserDetailNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "UserDetailViewModel"]
+- ["12GitHub_Users13UserViewModelC", "UserInfo"]
 - !private ["12GitHub_Users13UserViewModelC", "UserNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "Void"]
 - ["12GitHub_Users13UserViewModelC", "deinit"]
+- ["12GitHub_Users13UserViewModelC", "determineError"]
 - ["12GitHub_Users13UserViewModelC", "error"]
+- !private ["12GitHub_Users13UserViewModelC", "fetchUsers"]
 - ["12GitHub_Users13UserViewModelC", "getCountOfUsers"]
 - ["12GitHub_Users13UserViewModelC", "getRateLimit"]
 - ["12GitHub_Users13UserViewModelC", "getUser"]
@@ -172,51 +335,98 @@ depends-member:
 - ["12GitHub_Users13UserViewModelC", "init"]
 - ["12GitHub_Users13UserViewModelC", "navTitle"]
 - ["12GitHub_Users13UserViewModelC", "onError"]
-- !private ["12GitHub_Users13UserViewModelC", "print"]
 - !private ["12GitHub_Users13UserViewModelC", "rateLimit"]
 - ["12GitHub_Users13UserViewModelC", "rateLimitNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "updateClosure"]
 - ["12GitHub_Users13UserViewModelC", "userDetailNetworkService"]
 - ["12GitHub_Users13UserViewModelC", "userNetworkService"]
 - !private ["12GitHub_Users13UserViewModelC", "users"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "first"]
 - ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s14_ArrayProtocolP", "url"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "remaining"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "first"]
 - ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- !private ["s24_DestructorSafeContainerP", "url"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "remaining"]
+- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "first"]
 - ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "remaining"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leave"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notify"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "enter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leave"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lock"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "notify"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "unlock"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "remaining"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - "Sa"
-- !private "s10ArraySliceV"
 - "SK"
+- !private "Sz"
 - "s7CVarArgP"
 - "Sl"
+- !private "SL"
 - "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Foundation12DataProtocolP"
 - "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "So17OS_dispatch_groupC"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
 - "SE"
 - "SQ"
 - !private "s5ErrorP"
 - !private "12GitHub_Users16ErrorDescriptionV"
 - "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
+- !private "So6NSLockC"
+- !private "So9NSLockingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
 - "12GitHub_Users18NavigationProtocolP"
+- !private "Sj"
+- !private "So9OS_objectC"
 - "Sk"
 - "Sm"
 - "12GitHub_Users9RateLimitV"
@@ -224,18 +434,29 @@ depends-nominal:
 - !private "12GitHub_Users16RateLimitServiceP"
 - !private "12GitHub_Users18RateLimitViewModelC"
 - !private "s6ResultO"
+- !private "s10SIMDScalarP"
+- !private "7Combine9SchedulerP"
 - !private "12GitHub_Users23SearchUserDetailServiceP"
 - !private "12GitHub_Users17SearchUserServiceP"
 - "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 - !private "12GitHub_Users4UserV"
 - !private "12GitHub_Users24UserDetailNetworkServiceC"
 - !private "12GitHub_Users19UserDetailViewModelC"
 - !private "12GitHub_Users18UserNetworkServiceC"
 - "12GitHub_Users13UserViewModelC"
 - "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1449,4 +1670,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c0b442c18760928be899e01dae2cb049"
+interface-hash: "812e02e768f0eb31ab7531d95d6d55eb"

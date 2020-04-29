@@ -12,14 +12,14 @@ class RepoViewController: UIViewController {
     
     @IBOutlet weak var repoInfoTableView: UITableView!
     
-    var userVM: UserDetailViewModel!
+    var userVM: UserDetailViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "GitHub Searcher"
         setupTableView()
         setupViewModel()
-        userVM.getRepos()
+        userVM?.getRepos()
     }
     
     func setupTableView() {
@@ -31,15 +31,16 @@ class RepoViewController: UIViewController {
     }
     
     func setupViewModel() {
+        guard let userVM = userVM else { return }
         userVM.updateClosure = {
             DispatchQueue.main.async {
                 self.repoInfoTableView.reloadSections(.init(integer: 1), with: .automatic)
             }
         }
         userVM.onError = {
-            DispatchQueue.main.async {
-                let errorMessage = self.userVM.error?.errorDescription ?? "no error"
-                print("Show some error here: \(errorMessage)")
+            DispatchQueue.main.async { [weak self] in
+                let errorMessage = userVM.error?.errorDescription ?? "no error"
+                self?.showErrorAlert(text: errorMessage)
             }
         }
     }
@@ -48,7 +49,7 @@ class RepoViewController: UIViewController {
 
 extension RepoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard indexPath.section == 1 else { return }
+        guard indexPath.section == 1, let userVM = userVM else { return }
         let url = userVM.repoUrl(index: indexPath.row)
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
@@ -62,7 +63,7 @@ extension RepoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
-            return userVM.repoCount
+            return userVM?.repoCount ?? 0
         default:
             return 1
         }
@@ -81,7 +82,7 @@ extension RepoViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellID.repoCellReuseIdentifier, for: indexPath) as? RepoTableViewCell else {
                 fatalError("cannot dequeue cell")
             }
-            cell.repoVM = userVM.makeRepoViewModel(index: indexPath.row)
+            cell.repoVM = userVM?.makeRepoViewModel(index: indexPath.row)
             return cell
         }
     }
@@ -89,10 +90,10 @@ extension RepoViewController: UITableViewDataSource {
 
 extension RepoViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        userVM.search(searchText)
+        userVM?.search(searchText)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        userVM.search(searchBar.text ?? "")
+        userVM?.search(searchBar.text ?? "")
     }
 }

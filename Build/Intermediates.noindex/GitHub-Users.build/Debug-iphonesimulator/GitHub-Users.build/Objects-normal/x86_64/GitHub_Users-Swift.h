@@ -252,6 +252,8 @@ SWIFT_CLASS("_TtC12GitHub_Users18RepoViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
 @class UIImageView;
 
 SWIFT_CLASS("_TtC12GitHub_Users21UserInfoTableViewCell")

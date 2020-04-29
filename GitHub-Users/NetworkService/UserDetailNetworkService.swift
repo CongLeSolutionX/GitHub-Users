@@ -29,8 +29,7 @@ class UserDetailNetworkService: SearchUserDetailService {
                 let result = try JSONDecoder().decode(UserInfo.self, from: dataReceived)
                 completionHandler(.success(result))
             } catch {
-                completionHandler(.failure(.init(errorDescription: error.localizedDescription)))
-                return
+                completionHandler(.failure(.rateLimitExceeded))
             }
             
         }.resume() 

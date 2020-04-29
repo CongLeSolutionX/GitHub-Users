@@ -17,20 +17,9 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        checkRateLimit()
         setupSearchBar()
         setupTableView()
         setupViewModel()
-    }
-    
-    func checkRateLimit() {
-        // get the rate limit from GitHub API
-        userViewModel.getRateLimit { response  in
-            print("Limit request is: \(response?.limitRequest ?? 0)")
-            print("Reset time is: \(response?.resetTime ?? 0)")
-            print("Remaining request is: \(response?.remainingRequest ?? 0). If this remaining request hit 0, just wait to the next hour to make new request.")
-        }
     }
     
     func setupSearchBar() {
@@ -60,8 +49,9 @@ class UserViewController: UIViewController {
         }
         userViewModel.onError = { [weak self] in
             DispatchQueue.main.async {
-                let errorMessage = self?.userViewModel.error?.errorDescription ?? "no error"
-                print("Search bar error: \(errorMessage)")
+                guard let self = self else { return }
+                let errorMessage = self.userViewModel.error?.errorDescription ?? "Unknown Error"
+                self.showErrorAlert(text: errorMessage)
             }
         }
     }
@@ -71,14 +61,14 @@ class UserViewController: UIViewController {
 // MARK: - UITableViewDelegate
 extension UserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? UserTableViewCell else {
+        guard let cell = tableView.cellForRow(at: indexPath) as? UserTableViewCell,
+            let userVM = cell.userVM else {
             return
         }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let repoViewController = storyboard.instantiateViewController(withIdentifier: "RepoViewController") as? RepoViewController else {
             fatalError("Scene not found in Storyboard")
         }
-        let userVM = cell.userVM
         repoViewController.userVM = userVM
         present(repoViewController, animated: true, completion: nil)
     }
@@ -97,9 +87,7 @@ extension UserViewController: UITableViewDataSource {
                 fatalError("Cannot dequeue cell")
         }
         
-        userViewModel.getUserDetailVM(for: indexPath.row) { response in
-            cell.userVM = response
-        }
+        cell.userVM = userViewModel.getUserDetailVM(for: indexPath.row)
         return cell
     }
 }

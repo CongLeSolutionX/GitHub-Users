@@ -40,7 +40,6 @@ depends-member:
 - !private ["12GitHub_Users4RepoV", "stars"]
 - ["12GitHub_Users13RepoViewModelC", "Repo"]
 - ["12GitHub_Users13RepoViewModelC", "String"]
-- ["12GitHub_Users13RepoViewModelC", "deinit"]
 - ["12GitHub_Users13RepoViewModelC", "forks"]
 - ["12GitHub_Users13RepoViewModelC", "init"]
 - ["12GitHub_Users13RepoViewModelC", "name"]

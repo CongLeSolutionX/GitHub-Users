@@ -30,11 +30,8 @@ class UserNetworkService: SearchUserService {
             }
             // unwrap the HTTPS response code
             if let httpResponse = response as? HTTPURLResponse {
-                print(httpResponse.statusCode)
                 // if we receive a valid response code,
                 if  (200...299).contains(httpResponse.statusCode) {
-                    //print(httpResponse.value(forHTTPHeaderField: "X-Ratelimit-Limit") ?? "X-Ratelimit-Remaining")
-                    
                     guard let dataReceived = data else {
                         completionHandler(.failure(.init(errorDescription: "No data returned")))
                         return
@@ -47,8 +44,7 @@ class UserNetworkService: SearchUserService {
                         return
                     }
                 } else {
-                    print(httpResponse.value(forHTTPHeaderField: "Status") ?? "No Valid Status")
-                    completionHandler(.failure(.init()))
+                    completionHandler(.failure(.init(errorDescription: "Error: \(httpResponse.statusCode)")))
                     return
                 }
             }

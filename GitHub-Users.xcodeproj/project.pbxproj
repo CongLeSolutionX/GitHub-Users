@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F306A032459C19500F07BE9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F306A022459C19500F07BE9 /* UIViewController+Extension.swift */; };
 		3F414E012450A78E009685B3 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F414E002450A78E009685B3 /* UserInfoTableViewCell.swift */; };
 		3F414E032450A9E8009685B3 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F414E022450A9E8009685B3 /* RepoTableViewCell.swift */; };
 		3F414E052450AA17009685B3 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F414E042450AA17009685B3 /* RepoViewModel.swift */; };
@@ -15,7 +16,7 @@
 		4C30328E245765B300623191 /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30328D245765B300623191 /* RateLimit.swift */; };
 		4C303290245779E200623191 /* RateLimitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30328F245779E200623191 /* RateLimitViewModel.swift */; };
 		4C3032922457AA3C00623191 /* RateLimitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3032912457AA3C00623191 /* RateLimitService.swift */; };
-		4C303295245873C000623191 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C303294245873C000623191 /* Date+Extension.swift */; };
+		4C303295245873C000623191 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C303294245873C000623191 /* Int+Extension.swift */; };
 		4C7E517E244FE90600E5B519 /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E517D244FE90600E5B519 /* RepoViewController.swift */; };
 		4C7E5180244FE99100E5B519 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E517F244FE99100E5B519 /* UserViewModel.swift */; };
 		4C7E5182244FEF7900E5B519 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E5181244FEF7900E5B519 /* User.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F306A022459C19500F07BE9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3F414E002450A78E009685B3 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3F414E022450A9E8009685B3 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		3F414E042450AA17009685B3 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		4C30328D245765B300623191 /* RateLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimit.swift; sourceTree = "<group>"; };
 		4C30328F245779E200623191 /* RateLimitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimitViewModel.swift; sourceTree = "<group>"; };
 		4C3032912457AA3C00623191 /* RateLimitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimitService.swift; sourceTree = "<group>"; };
-		4C303294245873C000623191 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		4C303294245873C000623191 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4C7E517D244FE90600E5B519 /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		4C7E517F244FE99100E5B519 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		4C7E5181244FEF7900E5B519 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -82,7 +84,8 @@
 		4C303293245873AD00623191 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4C303294245873C000623191 /* Date+Extension.swift */,
+				4C303294245873C000623191 /* Int+Extension.swift */,
+				3F306A022459C19500F07BE9 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -270,7 +273,7 @@
 				3F414E032450A9E8009685B3 /* RepoTableViewCell.swift in Sources */,
 				4C7E519824502B8A00E5B519 /* ImageService.swift in Sources */,
 				4C7E5180244FE99100E5B519 /* UserViewModel.swift in Sources */,
-				4C303295245873C000623191 /* Date+Extension.swift in Sources */,
+				4C303295245873C000623191 /* Int+Extension.swift in Sources */,
 				4C890881244FA4CC000E9EFA /* AppDelegate.swift in Sources */,
 				3F414E012450A78E009685B3 /* UserInfoTableViewCell.swift in Sources */,
 				4C7E5195245025DD00E5B519 /* UserDetailNetworkService.swift in Sources */,
@@ -278,6 +281,7 @@
 				4C7E518D2450014900E5B519 /* UserTableViewCell.swift in Sources */,
 				4C303290245779E200623191 /* RateLimitViewModel.swift in Sources */,
 				4C7E517E244FE90600E5B519 /* RepoViewController.swift in Sources */,
+				3F306A032459C19500F07BE9 /* UIViewController+Extension.swift in Sources */,
 				4C7E5191245023BB00E5B519 /* UserDetailViewModel.swift in Sources */,
 				4C7E5193245023F500E5B519 /* UserInfo.swift in Sources */,
 				3F414E052450AA17009685B3 /* RepoViewModel.swift in Sources */,

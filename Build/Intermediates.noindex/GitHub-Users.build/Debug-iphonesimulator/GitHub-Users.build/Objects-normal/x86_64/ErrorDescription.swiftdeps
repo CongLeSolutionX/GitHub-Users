@@ -5,26 +5,49 @@ provides-nominal:
 - "12GitHub_Users16ErrorDescriptionV"
 provides-member:
 - ["12GitHub_Users16ErrorDescriptionV", ""]
+- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceededString"]
+- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceeded"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "??"
+- "CustomDebugStringConvertible"
 - "Error"
 - "ErrorDescription"
 - "String"
+- "StringLiteralType"
 depends-member:
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_code"]
+- ["s28CustomDebugStringConvertibleP", "_domain"]
+- ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
+- ["s28CustomDebugStringConvertibleP", "_userInfo"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "errorDescription"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "rateLimitExceededString"]
 - ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "debugDescription"]
+- !private ["s5ErrorP", "errorDescription"]
+- ["s5ErrorP", "init"]
+- ["s5ErrorP", "rateLimitExceededString"]
+- ["12GitHub_Users16ErrorDescriptionV", "ErrorDescription"]
 - ["12GitHub_Users16ErrorDescriptionV", "String"]
 - ["12GitHub_Users16ErrorDescriptionV", "_code"]
 - ["12GitHub_Users16ErrorDescriptionV", "_domain"]
 - ["12GitHub_Users16ErrorDescriptionV", "_getEmbeddedNSError"]
 - ["12GitHub_Users16ErrorDescriptionV", "_userInfo"]
+- ["12GitHub_Users16ErrorDescriptionV", "debugDescription"]
 - ["12GitHub_Users16ErrorDescriptionV", "deinit"]
 - ["12GitHub_Users16ErrorDescriptionV", "errorDescription"]
 - ["12GitHub_Users16ErrorDescriptionV", "init"]
+- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceeded"]
+- ["12GitHub_Users16ErrorDescriptionV", "rateLimitExceededString"]
 depends-nominal:
+- "s28CustomDebugStringConvertibleP"
 - "s5ErrorP"
 - "12GitHub_Users16ErrorDescriptionV"
 depends-dynamic-lookup:
@@ -1239,4 +1262,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "919fa727989c8b0ca1fc49927d9ac105"
+interface-hash: "8b227b09a075fe7ca5f104905e6a5068"

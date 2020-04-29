@@ -25,7 +25,7 @@ class UserViewModel: NavigationProtocol {
     var updateClosure: (() -> Void)?
     var onError: (() -> Void)?
     
-    private var users = [User]() {
+    private var users = [UserInfo]() {
         didSet {
             self.updateClosure?()
         }
@@ -49,44 +49,89 @@ class UserViewModel: NavigationProtocol {
         self.rateLimitNetworkService = rateLimitService
     }
     
-    func getRateLimit(completionHandler: @escaping(RateLimitViewModel?) -> Void) {
-        rateLimitNetworkService.getRateLimit {  (response) in
-            switch response {
-            case .success(let rate):
-                let RateLimitVM = RateLimitViewModel(rateLimit: rate)
-                completionHandler(RateLimitVM)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+    func getUserDetailVM(for index: Int) -> UserDetailViewModel {
+        UserDetailViewModel(users[index])
     }
-    
-    func getUser(_ searchTerm: String) {
-        userNetworkService.getUsers(with: searchTerm) { [weak self] (response) in
-            switch response {
-            case .success(let user):
-                self?.users = user
-            case .failure(let error):
-                self?.error = error
-            }
-        }
-    }
-    
-    func getUserDetailVM(for index: Int,
-                         completionHandler: @escaping(UserDetailViewModel?) -> Void ) {
-        userDetailNetworkService.getUserDetail(users[index].url) { response in
-            switch response {
-            case .success(let userDetail):
-                let userDetailVM = UserDetailViewModel(userDetail)
-                completionHandler(userDetailVM)
-            case .failure(let error):
-                print(error.localizedDescription)
-                completionHandler(nil)
-            }
-        }
-    }
-    
+        
     func getCountOfUsers() -> Int {
         return users.count
+    }
+}
+
+extension UserViewModel {
+    
+   
+    
+    func getUser(_ searchTerm: String) {
+        let getUsersCompletion: UserCompletionhandler = { [weak self] (response) in
+            guard let self = self else { return }
+            switch response {
+                case .success(let users):
+                    self.fetchUsers(users)
+                case .failure(let error):
+                    self.error = error
+            }
+        }
+        userNetworkService.getUsers(with: searchTerm, completionHandler: getUsersCompletion)
+    }
+    
+    private func fetchUsers(_ users: [User]) {
+        var userInfos = [UserInfo]()
+        var errors = [ErrorDescription]()
+        let lock = NSLock()
+        let group = DispatchGroup()
+        for user in users {
+            group.enter()
+            self.userDetailNetworkService.getUserDetail(user.url) { response in
+                defer { group.leave() }
+                lock.lock(); defer { lock.unlock() }
+                switch response {
+                    case .success(let userDetail):
+                        userInfos.append(userDetail)
+                    case .failure(let error):
+                        errors.append(error)
+                }
+            }
+        }
+        group.notify(queue: .main) {
+            if userInfos.isEmpty {
+                self.determineError(with: errors)
+            } else {
+                self.error = nil
+                self.users = userInfos
+            }
+        }
+    }
+    
+    func getRateLimit(completionHandler: @escaping(RateLimitViewModel?) -> Void) {
+        rateLimitNetworkService.getRateLimit { (response) in
+            switch response {
+                case .success(let rate):
+                    let RateLimitVM = RateLimitViewModel(rateLimit: rate)
+                    completionHandler(RateLimitVM)
+                case .failure:
+                    completionHandler(nil)
+            }
+        }
+    }
+    
+    func determineError(with errors: [ErrorDescription]) {
+        self.getRateLimit { response in
+            let error: ErrorDescription
+            if let response = response, let remainingRequest = response.remainingRequest, remainingRequest == 0 {
+                let timeRemaining = response.resetTime?.remaining
+                let errorString = """
+                Requests available: \(remainingRequest)\\\(response.limitRequest ?? 0)
+                Reset time is in: \(timeRemaining?.minutes ?? 0) minutes and \(timeRemaining?.seconds ?? 0) seconds
+                If this remaining request hit 0, just wait to the next hour to make new request.
+                """
+                error = ErrorDescription(errorDescription: errorString)
+            }
+            else {
+                error = errors.first ?? ErrorDescription.rateLimitExceeded
+            }
+            self.error = error
+            self.users = []
+        }
     }
 }
