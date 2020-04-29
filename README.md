@@ -7,6 +7,7 @@ This app is built based on the following criteria:
 - Built on MVVM architectureal pattern.
 - Is natively built on Swift 5.1 and iOS Developemnt Target 13.0 and not used any third-party libraries.
 - Is able to search through GitHub users and their corresponding projects using the GitHub API: [https://developer.github.com/v3/](). 
+- Support both Landscape and Portrait mode.
 - The application shall contain 2 scenes with the following specifications: 
 	1. **The first scene**: 
 		- Uses UITableView showing one user per table cell.
@@ -72,6 +73,7 @@ This app is built based on the following criteria:
 <br/>
 <br/>
 <br/>
+
 ### Error cases: 
 <img align="left" src="Screenshots/Screenshots-5.png" width="200" height="400" title="Screenshots-5">
 
