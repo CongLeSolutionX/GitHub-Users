@@ -17,18 +17,31 @@ This app is built based on the following criteria:
 		- Tapping on a user will bring up a screen that contains the profile details of that user, aka displaying the second view.
 	
 	2. **The second scene**: will separate into 2 parts: 
-
 	
 		a. The first part (the top half of the scene): 
+		
 			- The view should contain their avatar image (a larger image) on the top left corner.
+
+			
 			- Right next the avatar image, display the following info: username, number of followers, number of following, biography, email, location, join date, and a list of public repositories.
+
+			
 			- Each item of the list view shall contain the name of the repository, the number of stars, and the number of forks.
+
+			
 			- The search bar will allow the user to search through the user’s repository. 
 
 		b. The second part (the bottom half of the scene): 
+		
 			- Display the list view of all repos of the selected user profile.
+
+			
 			- The list view shall not be paginated.
+
+			
 			- The search will automatically update upon each letter entered.
+
+			
 			- Tapping on a repository shall bring to a web browser and open the repository in the GitHub website.
 ## Bluprint:
 
