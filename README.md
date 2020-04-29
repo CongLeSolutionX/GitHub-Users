@@ -31,7 +31,9 @@ This app is built based on the following criteria:
 			- The search will automatically update upon each letter entered.
 			- Tapping on a repository shall bring to a web browser and open the repository in the GitHub website.
 ## Bluprint:
+
 		<img align="center" src="Screenshots/Blueprint.png" width="800" height="800" title="Blueprint">
+		
 ## Extra Features:
 - Get infinite scrolling working for the first screen.
 - Error handling with meaningful messages in cases: 
