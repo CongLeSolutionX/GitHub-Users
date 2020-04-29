@@ -50,11 +50,69 @@ This app is built based on the following criteria:
 	- return fetched resull with https status codes for futher insight of error.
 
 ## Screenshots: 
-### Normal workflow: 
-<img align="left" src="Screenshots/Screenshots-1.png" width="200" height="400" title="Screenshots-1">
-<img align="left" src="Screenshots/Screenshots-2.png" width="200" height="400" title="Screenshots-2">
-<img align="left" src="Screenshots/Screenshots-3.png" width="200" height="400" title="Screenshots-3">
-<img align="left" src="Screenshots/Screenshots-4.png" width="200" height="400" title="Screenshots-4">
+### Normal workflow - Portrait mode: 
+<img align="left" src="Screenshots/Screenshots-Portrait-1.png" width="200" height="400" title="Screenshots-Portrait-1">
+<img align="left" src="Screenshots/Screenshots-Portrait-2.png" width="200" height="400" title="Screenshots-Portrait-2">
+<img align="left" src="Screenshots/Screenshots-Portrait-3.png" width="200" height="400" title="Screenshots-Portrait-3">
+<img align="left" src="Screenshots/Screenshots-Portrait-4.png" width="200" height="400" title="Screenshots-Portrait-4">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+### Normal workflow - Landscape mode:
+<img align="left" src="Screenshots/Screenshots-Landscape-1.png" width="800" height="400" title="Screenshots-Landscape-1">
+<img align="left" src="Screenshots/Screenshots-Landscape-2.png" width="800" height="400" title="Screenshots-Landscape-2">
+<img align="left" src="Screenshots/Screenshots-Landscape-3.png" width="800" height="400" title="Screenshots-Landscape-3">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -75,7 +133,9 @@ This app is built based on the following criteria:
 <br/>
 
 ### Error cases: 
-<img align="left" src="Screenshots/Screenshots-5.png" width="200" height="400" title="Screenshots-5">
+<img align="left" src="Screenshots/Screenshots-Error-1.png" width="200" height="400" title="Screenshots-Error-1">
+
+<img align="left" src="Screenshots/Screenshots-Error-2.png" width="200" height="400" title="Screenshots-Error-2">
 
 
 
