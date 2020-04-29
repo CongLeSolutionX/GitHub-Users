@@ -72,6 +72,7 @@ This app is built based on the following criteria:
 <br/>
 <br/>
 <br/>
+
 ### Error cases: 
 <img align="left" src="Screenshots/Screenshots-5.png" width="200" height="400" title="Screenshots-5">
 
