@@ -73,6 +73,7 @@ This app is built based on the following criteria:
 <br/>
 <br/>
 <br/>
+
 ### Normal workflow - Landscape mode:
 <img align="left" src="Screenshots/Screenshots-Landscape-1.png" width="800" height="400" title="Screenshots-Landscape-1">
 <img align="left" src="Screenshots/Screenshots-Landscape-2.png" width="800" height="400" title="Screenshots-Landscape-2">
