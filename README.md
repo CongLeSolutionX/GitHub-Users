@@ -38,7 +38,7 @@ This app is built based on the following criteria:
 			- The search will automatically update upon each letter entered.
 			
 			- Tapping on a repository shall bring to a web browser and open the repository in the GitHub website.
-## Bluprint:
+## Blueprint:
 
 <img align="center" src="Screenshots/Blueprint.png" width="600" height="600" title="Blueprint">
 		
